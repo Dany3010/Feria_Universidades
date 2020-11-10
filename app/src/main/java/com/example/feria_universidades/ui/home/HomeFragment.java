@@ -39,11 +39,12 @@ public class HomeFragment extends Fragment {
         String videoPath = "https://rentaclassic.000webhostapp.com/videos/secretaria.mp4";
         Uri uri = Uri.parse(videoPath);
         videoView.setVideoURI(uri);
-        MediaController mediaController = new MediaController(videoView.getContext());
+        videoView.start();
+       /* MediaController mediaController = new MediaController(videoView.getContext());
         mediaController.setAnchorView(videoView);
 
 
-        videoView.setMediaController(mediaController);
+        videoView.setMediaController(mediaController);*/
 
 
 

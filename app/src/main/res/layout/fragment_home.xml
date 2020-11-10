@@ -21,61 +21,103 @@
                 android:layout_height="421dp"
                 app:srcCompat="@drawable/feria_virtual" />
 
-            <LinearLayout
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                app:cardCornerRadius="30dp"
+                app:cardElevation="40dp"
+                 android:layout_margin="20dp">
 
-                <VideoView
-                    android:id="@+id/video"
+                <LinearLayout
+                    android:layout_width="381dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <VideoView
+                        android:id="@+id/video"
+                        android:layout_width="367dp"
+                        android:layout_height="245dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="256dp"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="40dp">
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="245dp" />
-            </LinearLayout>
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/titulo1"
+                    <TextView
+                        android:id="@+id/titulo1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Bienvenidos a la Feria Virtual Universitaria 2020"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                    <com.codesgood.views.JustifiedTextView
+                        android:id="@+id/parrafo1"
+                        android:layout_width="match_parent"
+                        android:layout_height="147dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="Bienvenidos a la Feria Virtual Universitaria 2020"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="24sp" />
+                android:layout_height="200dp"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="40dp">
 
-            <com.codesgood.views.JustifiedTextView
-                android:id="@+id/parrafo1"
-                android:layout_width="match_parent"
-                android:layout_height="136dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="5dp"
-                android:textColor="#000000"
-                android:textSize="18sp" />
-
-            <LinearLayout
-                android:layout_width="137dp"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/test"
-                    android:layout_width="132dp"
+                <LinearLayout
+                    android:layout_width="140dp"
                     android:layout_height="132dp"
-                    android:background="@drawable/test"
-                    android:onClick="test" />
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
 
-            </LinearLayout>
+                    <Button
+                        android:id="@+id/test"
+                        android:layout_width="140dp"
+                        android:layout_height="132dp"
+                        android:background="@drawable/test"
+                        android:gravity="center"
+                        android:onClick="test" />
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Iniciar Test Vocacional"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="198dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Iniciar Test Vocacional"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
 
             <TextView
                 android:id="@+id/espacion_blanco"
