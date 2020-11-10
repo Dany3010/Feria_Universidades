@@ -17,6 +17,7 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.feria_universidades.R;
 
+
 public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
@@ -30,7 +31,24 @@ public class HomeFragment extends Fragment {
         final TextView textView = root.findViewById(R.id.text_home);
           inicio=(TextView)root.findViewById(R.id.parrafo1);
         videoView=(VideoView)root.findViewById(R.id.video);
-        videoView.setVideoURI(Uri.parse("https://rentaclassic.000webhostapp.com/videos/secretaria.mp4"));
+        String videoPath = "https://rentaclassic.000webhostapp.com/videos/secretaria.mp4";
+        Uri uri = Uri.parse(videoPath);
+        videoView.setVideoURI(uri);
+        MediaController mediaController = new MediaController(videoView.getContext());
+        mediaController.setAnchorView(videoView);
+
+
+        videoView.setMediaController(mediaController);
+
+
+
+
+
+
+
+
+
+
 
 
         homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
@@ -42,10 +60,9 @@ public class HomeFragment extends Fragment {
                         "Oferta Educativa a todos los jóvenes que quieren continuar su formación cursando una " +
                         "carrera universitaria.";
                 inicio.setText(p1);
-                MediaController mediaController = new MediaController(getActivity());
-                mediaController.setAnchorView(videoView);
-                videoView.setMediaController(mediaController);
-                videoView.requestFocus();
+
+
+
 
             }
         });
