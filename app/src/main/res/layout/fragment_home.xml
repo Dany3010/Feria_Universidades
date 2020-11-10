@@ -42,10 +42,13 @@
                 android:textColor="#000000"
                 android:textSize="24sp" />
 
-            <TextView
+            <com.codesgood.views.JustifiedTextView
                 android:id="@+id/parrafo1"
                 android:layout_width="match_parent"
                 android:layout_height="136dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
                 android:textColor="#000000"
                 android:textSize="18sp" />
 
