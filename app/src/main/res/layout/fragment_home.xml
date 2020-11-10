@@ -62,7 +62,8 @@
                     android:id="@+id/test"
                     android:layout_width="132dp"
                     android:layout_height="132dp"
-                    android:background="@drawable/test" />
+                    android:background="@drawable/test"
+                    android:onClick="test" />
 
             </LinearLayout>
 
