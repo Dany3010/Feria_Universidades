@@ -38,6 +38,7 @@ public class HomeFragment extends Fragment {
                 textView.setText(s);
 
                 MediaController mediaController = new MediaController(getActivity());
+                mediaController.setAnchorView(videoView);
                 videoView.setMediaController(mediaController);
                 videoView.requestFocus();
                 videoView.start();
@@ -45,4 +46,5 @@ public class HomeFragment extends Fragment {
         });
         return root;
     }
+
 }
