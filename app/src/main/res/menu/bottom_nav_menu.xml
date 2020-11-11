@@ -16,4 +16,9 @@
         android:icon="@drawable/school"
         android:title="Universidades" />
 
+    <item
+        android:id="@+id/navigation_login"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:title="Usuario" />
+
 </menu>

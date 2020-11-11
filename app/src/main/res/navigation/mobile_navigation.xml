@@ -22,4 +22,10 @@
         android:name="com.example.feria_universidades.ui.notifications.NotificationsFragment"
         android:label="Universidades"
         tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="com.example.feria_universidades.ui.login.LoginFragment"
+        android:label="Usuario"
+        tools:layout="@layout/fragment_login" />
 </navigation>
