@@ -30,150 +30,194 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
-            <TextView
-                android:id="@+id/titulo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="BIENVENIDO A LA SALA DE CONFERENCIAS"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/subtitulo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="UNIVERSIDAD MODELO CONFERENCIA MOTIVACIONAL"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="18sp" />
-
-            <VideoView
-                android:id="@+id/confe1"
-
-                android:layout_width="match_parent"
-                android:layout_height="240dp" />
-
-            <LinearLayout
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
+                app:cardCornerRadius="10dp"
+                app:cardElevation="40dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="20dp">
 
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="107dp"
-                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="74dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/play"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/play" />
+                    <TextView
+                        android:id="@+id/titulo"
+                        android:layout_width="match_parent"
+                        android:layout_height="74dp"
+                        android:text="BIENVENIDO A LA SALA DE CONFERENCIAS"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
-                <Button
-                    android:id="@+id/pause"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/pausar" />
-
-                <Button
-                    android:id="@+id/restart"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/reiniciar" />
-
-            </LinearLayout>
-
-            <TextView
-                android:id="@+id/subtitulo2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="UNIVERSIDAD TECNOLÓGICA RIVIERA MAYA"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="18sp" />
-
-            <VideoView
-                android:id="@+id/confe2"
-                android:layout_width="match_parent"
-                android:layout_height="240dp" />
-
-            <LinearLayout
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
+                app:cardCornerRadius="15dp"
+                app:cardElevation="40dp"
+                android:layout_margin="20dp">
 
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="107dp"
-                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/play2"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/play" />
+                    <TextView
+                        android:id="@+id/subtitulo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="UNIVERSIDAD MODELO CONFERENCIA MOTIVACIONAL"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
 
-                <Button
-                    android:id="@+id/pause2"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/pausar" />
+                    <VideoView
+                        android:id="@+id/confe1"
 
-                <Button
-                    android:id="@+id/restart2"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/reiniciar" />
-            </LinearLayout>
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp" />
 
-            <TextView
-                android:id="@+id/subtitulo3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="CENTRO DE ESTUDIOS GESTALT PARA EL DISEÑO OPORTUNIDADES DE UN EGRESADO EN DISEÑO Y  MERCADOTECNIA DE LA MODA "
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="18sp" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
 
-            <VideoView
-                android:id="@+id/confe3"
-                android:layout_width="match_parent"
-                android:layout_height="240dp" />
+                        <Button
+                            android:id="@+id/play"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/play" />
 
-            <LinearLayout
+                        <Button
+                            android:id="@+id/pause"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/pausar" />
+
+                        <Button
+                            android:id="@+id/restart"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/reiniciar" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
+                app:cardCornerRadius="15dp"
+                app:cardElevation="40dp"
+                android:layout_margin="20dp">
 
-                <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="107dp"
-                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/play3"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/play" />
+                    <TextView
+                        android:id="@+id/subtitulo2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="UNIVERSIDAD TECNOLÓGICA RIVIERA MAYA"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
 
-                <Button
-                    android:id="@+id/pause3"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/pausar" />
+                    <VideoView
+                        android:id="@+id/confe2"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp" />
 
-                <Button
-                    android:id="@+id/restart3"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/reiniciar" />
-            </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="147dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
 
+                        <Button
+                            android:id="@+id/play2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/play" />
+
+                        <Button
+                            android:id="@+id/pause2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/pausar" />
+
+                        <Button
+                            android:id="@+id/restart2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/reiniciar" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="40dp"
+                android:layout_margin="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subtitulo3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="CENTRO DE ESTUDIOS GESTALT PARA EL DISEÑO OPORTUNIDADES DE UN EGRESADO EN DISEÑO Y  MERCADOTECNIA DE LA MODA "
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <VideoView
+                        android:id="@+id/confe3"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp" />
+
+                    <LinearLayout
+                        android:layout_width="154dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/play3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/play" />
+
+                        <Button
+                            android:id="@+id/pause3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/pausar" />
+
+                        <Button
+                            android:id="@+id/restart3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/reiniciar" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
             <TextView
                 android:id="@+id/espacion_blanco2"
                 android:layout_width="match_parent"
@@ -181,5 +225,8 @@
 
         </LinearLayout>
     </ScrollView>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
