@@ -35,16 +35,17 @@ public class HomeFragment extends Fragment {
         final TextView textView = root.findViewById(R.id.text_home);
           inicio=(TextView)root.findViewById(R.id.parrafo1);
         testvoc=(Button)root.findViewById(R.id.test);
+
+
         videoView=(VideoView)root.findViewById(R.id.video);
         String videoPath = "https://rentaclassic.000webhostapp.com/videos/secretaria.mp4";
         Uri uri = Uri.parse(videoPath);
         videoView.setVideoURI(uri);
-        videoView.start();
-       /* MediaController mediaController = new MediaController(videoView.getContext());
+        MediaController mediaController = new MediaController(videoView.getContext());
         mediaController.setAnchorView(videoView);
 
 
-        videoView.setMediaController(mediaController);*/
+        videoView.setMediaController(mediaController);
 
 
 
