@@ -218,6 +218,170 @@
                     </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="40dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subtitulo4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="CENTRO DE ESTUDIOS GESTALT PARA EL DISEÑO DE LA GRÁFICA A LA MULTIMEDIA"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <VideoView
+                        android:id="@+id/confe4"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp" />
+
+                    <LinearLayout
+                        android:layout_width="146dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/play4"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/play" />
+
+                        <Button
+                            android:id="@+id/pause4"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/pausar" />
+
+                        <Button
+                            android:id="@+id/restart4"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/reiniciar" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="40dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subtitulo5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="IMESAD CAMPUS CANCÚN "
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <VideoView
+                        android:id="@+id/confe5"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp" />
+
+                    <LinearLayout
+                        android:layout_width="152dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/play5"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/play" />
+
+                        <Button
+                            android:id="@+id/pause5"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/pausar" />
+
+                        <Button
+                            android:id="@+id/restart5"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/reiniciar" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="40dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subtitulo6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="UNIVERSIDAD DE LA SALLE CANCÚN  WEBINAR MERCADOTECNIA"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <VideoView
+                        android:id="@+id/confe6"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp" />
+
+                    <LinearLayout
+                        android:layout_width="151dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/play6"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/play" />
+
+                        <Button
+                            android:id="@+id/pause6"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/pausar" />
+
+                        <Button
+                            android:id="@+id/restart6"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/reiniciar" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
             <TextView
                 android:id="@+id/espacion_blanco2"
                 android:layout_width="match_parent"
@@ -225,8 +389,6 @@
 
         </LinearLayout>
     </ScrollView>
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
