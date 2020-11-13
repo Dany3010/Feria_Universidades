@@ -3,6 +3,14 @@
     <color name="colorPrimary">@color/design_default_color_secondary_variant</color>
     <color name="colorPrimaryDark">@color/colorPrimary</color>
     <color name="colorAccent">@color/colorPrimaryDark</color>
+    <color name="dark_blue">#3023AE</color>
+    <color name="purple">#c86dd7</color>
 
+    <color name="login_form_details">#ccffffff</color>
+    <color name="login_form_details_light">#1affffff</color>
+    <color name="login_form_details_medium">#66ffffff</color>
+    <color name="uno">#70B4DC</color>
+    <color name="dos">#E4E4EC</color>
+    <color name="tres">#4c444c</color>
     <color name="colorSplash">#000000</color>
 </resources>

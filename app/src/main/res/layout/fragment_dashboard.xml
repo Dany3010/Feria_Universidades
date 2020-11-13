@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo2"
     tools:context=".ui.dashboard.DashboardFragment">
 
     <TextView
@@ -87,6 +88,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_gravity="center_horizontal"
+                        android:background="#FFFFFF"
                         android:orientation="horizontal">
 
                         <Button

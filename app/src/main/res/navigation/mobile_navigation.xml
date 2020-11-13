@@ -25,7 +25,7 @@
 
     <fragment
         android:id="@+id/navigation_login"
-        android:name="com.example.feria_universidades.ui.login.LoginFragment"
+        android:name="com.example.feria_universidades.ui.login.login"
         android:label="Usuario"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/login_fragment" />
 </navigation>

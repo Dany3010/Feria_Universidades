@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo2"
     tools:context=".ui.home.HomeFragment">
 
     <ScrollView
@@ -19,6 +20,7 @@
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
                 android:layout_height="421dp"
+                android:background="#FFFFFF"
                 app:srcCompat="@drawable/feria_virtual" />
 
             <androidx.cardview.widget.CardView
