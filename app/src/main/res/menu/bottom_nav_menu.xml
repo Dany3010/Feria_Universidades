@@ -7,12 +7,12 @@
         android:title="Inicio" />
 
     <item
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_conferencias"
         android:icon="@drawable/conference_logo"
         android:title="Conferencias" />
 
     <item
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_universidades"
         android:icon="@drawable/school"
         android:title="Universidades" />
 
