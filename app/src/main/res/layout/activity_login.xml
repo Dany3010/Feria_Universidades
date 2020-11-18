@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_login"
-    tools:context="com.example.feria_universidades.ui.login.login">
+    tools:context=".Login">
+
 
 
 
@@ -47,6 +48,7 @@
         android:textColor="#FFFFFF"
         android:textColorHint="@color/login_form_details"
         app:layout_constraintEnd_toStartOf="@id/guideline_right"
+        app:layout_constraintHorizontal_bias="0.631"
         app:layout_constraintStart_toStartOf="@id/guideline_left"
         app:layout_constraintTop_toBottomOf="@+id/icon" />
 
@@ -83,7 +85,7 @@
         android:id="@+id/forgot_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="36dp"
         android:text="@string/don_t_remember_password"
         android:textColor="@color/login_form_details"
         android:textSize="16sp"
@@ -91,48 +93,26 @@
         app:layout_constraintStart_toStartOf="@id/guideline_left"
         app:layout_constraintTop_toBottomOf="@id/btn_login" />
 
-    <View
-        android:id="@+id/footer_line"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:layout_marginBottom="50dp"
-        android:background="#fff"
-        app:layout_constraintBottom_toBottomOf="parent" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
         android:text="@string/dont_have_an_account"
         android:textColor="@color/login_form_details"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/footer_line" />
-
-    <TextView
-        android:id="@+id/facebook_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:drawablePadding="8dp"
-        android:drawableStart="@drawable/ic_if_square_facebook"
-        android:text="@string/sign_in_with_facebook"
-        android:textColor="@color/login_form_details"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/footer_line"
-        app:layout_constraintEnd_toStartOf="@id/guideline_right"
-        app:layout_constraintStart_toStartOf="@id/guideline_left" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <View
         android:id="@+id/line1"
         android:layout_width="120dp"
         android:layout_height="1dp"
+        android:layout_marginTop="64dp"
         android:background="@color/login_form_details_medium"
-        app:layout_constraintStart_toStartOf="@id/guideline_left"
-        app:layout_constraintTop_toBottomOf="@+id/forgot_password"
-        app:layout_constraintBottom_toTopOf="@+id/facebook_login"
+        app:layout_constraintEnd_toStartOf="@+id/or"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintEnd_toStartOf="@+id/or"/>
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/forgot_password" />
 
     <TextView
         android:id="@+id/or"
@@ -155,6 +135,4 @@
         app:layout_constraintEnd_toEndOf="@id/guideline_right"
         app:layout_constraintStart_toEndOf="@+id/or"
         app:layout_constraintTop_toTopOf="@+id/or" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
-

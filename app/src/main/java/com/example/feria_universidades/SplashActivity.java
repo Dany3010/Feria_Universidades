@@ -22,7 +22,7 @@ public class SplashActivity extends AppCompatActivity {
 
 
 
-                Intent intent=new Intent(SplashActivity.this, Feria_universitaria.class);
+                Intent intent=new Intent(SplashActivity.this, PresentacionActivity.class);
                 startActivity(intent);
 
 

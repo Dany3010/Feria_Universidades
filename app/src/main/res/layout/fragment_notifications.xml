@@ -630,27 +630,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="20dp"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="40dp">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="174dp"
-                    android:layout_gravity="center_horizontal"
-                    android:orientation="horizontal">
-
-                    <Button
-                        android:id="@+id/unid_cozumel"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/unid_cozumel" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -874,21 +854,6 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/instituto_sup_leyes_benito_juarez" />
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="20dp"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="40dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="174dp"
-                    android:layout_gravity="center_horizontal"
-                    android:orientation="horizontal"></LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <TextView
