@@ -8,11 +8,128 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titulo_uni"
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imagenUni"
+                android:layout_width="match_parent"
+                android:layout_height="174dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <LinearLayout
+                android:layout_width="244dp"
+                android:layout_height="95dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/videos"
+                    android:layout_width="63dp"
+                    android:layout_height="63dp"
+                    android:background="@drawable/video" />
+
+                <TextView
+                    android:id="@+id/esp_blanco"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/fotos"
+                    android:layout_width="63dp"
+                    android:layout_height="63dp"
+                    android:background="@drawable/fotos" />
+
+                <TextView
+                    android:id="@+id/esp_blanco2"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/proceso"
+                    android:layout_width="63dp"
+                    android:layout_height="63dp"
+                    android:background="@drawable/formulario_de_admision" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/ofertas"
+                    android:layout_width="63dp"
+                    android:layout_height="63dp"
+                    android:background="@drawable/libros" />
+
+                <TextView
+                    android:id="@+id/esp_blanco4"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/becas"
+                    android:layout_width="63dp"
+                    android:layout_height="63dp"
+                    android:background="@drawable/beca" />
+
+                <TextView
+                    android:id="@+id/esp_blanco5"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/contactos"
+                    android:layout_width="63dp"
+                    android:layout_height="63dp"
+                    android:background="@drawable/contactos" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/esp_blanco6"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/descrip"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:text="Descripcion de  la universidad"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/descrip_uni"
+                android:layout_width="match_parent"
+                android:layout_height="201dp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+        </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
