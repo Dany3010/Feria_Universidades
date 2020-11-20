@@ -14,11 +14,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Uni_detalle"
-            android:label="Universidad"></activity>
+        <activity android:name=".Documentos_uni_detalle"></activity>
+        <activity android:name=".contactos_uni_detalle" />
+        <activity android:name=".videos_detalle" />
+        <activity android:name=".fotos_detalles" />
+        <activity
+            android:name=".Uni_detalle"
+            android:label="Universidad" />
         <activity
             android:name=".PresentacionActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".MainActivity2"
             android:label="Test Vocacional" />

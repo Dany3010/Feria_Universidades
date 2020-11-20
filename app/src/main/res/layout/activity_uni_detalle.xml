@@ -39,10 +39,11 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/videos"
+                    android:id="@+id/videos_uni"
                     android:layout_width="63dp"
                     android:layout_height="63dp"
-                    android:background="@drawable/video" />
+                    android:background="@drawable/video"
+                    android:onClick="Videos" />
 
                 <TextView
                     android:id="@+id/esp_blanco"
@@ -51,10 +52,11 @@
                     android:textSize="24sp" />
 
                 <Button
-                    android:id="@+id/fotos"
+                    android:id="@+id/fotos_uni"
                     android:layout_width="63dp"
                     android:layout_height="63dp"
-                    android:background="@drawable/fotos" />
+                    android:background="@drawable/fotos"
+                    android:onClick="Fotos" />
 
                 <TextView
                     android:id="@+id/esp_blanco2"
@@ -77,7 +79,7 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/ofertas"
+                    android:id="@+id/ofertas_uni"
                     android:layout_width="63dp"
                     android:layout_height="63dp"
                     android:background="@drawable/libros" />
@@ -89,7 +91,7 @@
                     android:textSize="24sp" />
 
                 <Button
-                    android:id="@+id/becas"
+                    android:id="@+id/becas_uni"
                     android:layout_width="63dp"
                     android:layout_height="63dp"
                     android:background="@drawable/beca" />
@@ -101,10 +103,11 @@
                     android:textSize="24sp" />
 
                 <Button
-                    android:id="@+id/contactos"
+                    android:id="@+id/contactos_uni"
                     android:layout_width="63dp"
                     android:layout_height="63dp"
-                    android:background="@drawable/contactos" />
+                    android:background="@drawable/contactos"
+                    android:onClick="contactos" />
             </LinearLayout>
 
             <TextView

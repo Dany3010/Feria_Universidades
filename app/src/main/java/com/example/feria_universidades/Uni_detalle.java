@@ -2,13 +2,17 @@ package com.example.feria_universidades;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Uni_detalle extends AppCompatActivity {
   ImageView imagen_uni;
   TextView recibidor;
+  Button videos,fotos,becas,admision,ofertas,contactos;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +22,15 @@ public class Uni_detalle extends AppCompatActivity {
         String valor =bundle.getString("uni");
         imagen_uni = (ImageView)findViewById(R.id.imagenUni);
         recibidor= (TextView) findViewById(R.id.titulo_uni);
+
+
+        videos =(Button)findViewById(R.id.videos_uni);
+        fotos =(Button)findViewById(R.id.fotos_uni);
+        becas =(Button)findViewById(R.id.becas_uni);
+        admision =(Button)findViewById(R.id.proceso);
+        ofertas =(Button)findViewById(R.id.ofertas_uni);
+        contactos =(Button)findViewById(R.id.contactos_uni);
+
 
         /////OTHON P. BLANCO////////
         if (valor.equals("uni_itzm")){
@@ -135,5 +148,36 @@ public class Uni_detalle extends AppCompatActivity {
             recibidor.setText("Instituto Superior de Leyes");
             imagen_uni.setImageResource(R.drawable.instituto_sup_leyes_benito_juarez);
         }
+
+    }
+    public void contactos(View v){
+        Intent contactos = new Intent(this, contactos_uni_detalle.class);
+        contactos.putExtra("universidad_deta","contacto_unis");
+        startActivity(contactos);
+    }
+    public void Videos(View v){
+        Intent videos_uni = new Intent(this, videos_detalle.class);
+        videos_uni.putExtra("universidad_deta","video_unis");
+        startActivity(videos_uni);
+    }
+    public void Fotos(View v){
+        Intent fotos_uni = new Intent(this, fotos_detalles.class);
+        fotos_uni.putExtra("universidad_deta","foto_unis");
+        startActivity(fotos_uni);
+    }
+    public void Becas(View v){
+        Intent becas_uni = new Intent(this, Documentos_uni_detalle.class);
+        becas_uni.putExtra("universidad_deta","becas_unis");
+        startActivity(becas_uni);
+    }
+    public void Ofertas(View v){
+        Intent ofertas_uni = new Intent(this, Documentos_uni_detalle.class);
+        ofertas_uni.putExtra("universidad_deta","ofertas_unis");
+        startActivity(ofertas_uni);
+    }
+    public void Admsion(View v){
+        Intent admin_uni = new Intent(this, Documentos_uni_detalle.class);
+        admin_uni.putExtra("universidad_deta","admin_unis");
+        startActivity(admin_uni);
     }
 }
