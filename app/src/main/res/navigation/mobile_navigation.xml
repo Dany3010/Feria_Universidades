@@ -15,13 +15,13 @@
         android:id="@+id/navigation_conferencias"
         android:name="com.example.feria_universidades.ui.dashboard.DashboardFragment"
         android:label="Conferencias"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_conferencia" />
 
     <fragment
         android:id="@+id/navigation_universidades"
         android:name="com.example.feria_universidades.ui.notifications.NotificationsFragment"
         android:label="Universidades"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_universidades" />
 
     <fragment
         android:id="@+id/navigation_login"

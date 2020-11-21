@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Documentos_uni_detalle extends AppCompatActivity {
+public class Admision_uni_detalle extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_documentos_uni_detalle);
+        setContentView(R.layout.activity_admision_uni_detalle);
     }
 }

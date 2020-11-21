@@ -2,8 +2,124 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/videos_universidad"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".videos_detalle">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titulo_uni_v"
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imagenUni_v"
+                android:layout_width="match_parent"
+                android:layout_height="174dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/esp_blanco3"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/subtitulo_uni_v"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/subtitulo_uni_v2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <WebView
+                android:id="@+id/video_uni1"
+                android:layout_width="match_parent"
+                android:layout_height="282dp" >
+
+            </WebView>
+
+            <TextView
+                android:id="@+id/esp_blanco7"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:textSize="24sp" />
+
+            <WebView
+                android:id="@+id/video_uni2"
+                android:layout_width="match_parent"
+                android:layout_height="282dp" >
+
+            </WebView>
+
+            <TextView
+                android:id="@+id/esp_blanco8"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:textSize="24sp" />
+
+            <WebView
+                android:id="@+id/video_uni3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </WebView>
+
+            <TextView
+                android:id="@+id/esp_blanco9"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:textSize="24sp" />
+
+            <WebView
+                android:id="@+id/video_uni4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/subtitulo_uni_v3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <WebView
+                android:id="@+id/video_uni5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/esp_blanco10"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

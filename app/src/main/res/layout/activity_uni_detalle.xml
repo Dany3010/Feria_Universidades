@@ -42,8 +42,7 @@
                     android:id="@+id/videos_uni"
                     android:layout_width="63dp"
                     android:layout_height="63dp"
-                    android:background="@drawable/video"
-                    android:onClick="Videos" />
+                    android:background="@drawable/video" />
 
                 <TextView
                     android:id="@+id/esp_blanco"
@@ -55,8 +54,7 @@
                     android:id="@+id/fotos_uni"
                     android:layout_width="63dp"
                     android:layout_height="63dp"
-                    android:background="@drawable/fotos"
-                    android:onClick="Fotos" />
+                    android:background="@drawable/fotos" />
 
                 <TextView
                     android:id="@+id/esp_blanco2"
@@ -106,8 +104,7 @@
                     android:id="@+id/contactos_uni"
                     android:layout_width="63dp"
                     android:layout_height="63dp"
-                    android:background="@drawable/contactos"
-                    android:onClick="contactos" />
+                    android:background="@drawable/contactos" />
             </LinearLayout>
 
             <TextView

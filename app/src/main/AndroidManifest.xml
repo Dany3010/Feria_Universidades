@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -14,10 +15,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Documentos_uni_detalle"></activity>
-        <activity android:name=".contactos_uni_detalle" />
-        <activity android:name=".videos_detalle" />
-        <activity android:name=".fotos_detalles" />
+        <activity android:name=".Ofertas_uni_detalle"
+            android:label="Ofertas"></activity>
+        <activity android:name=".Admision_uni_detalle"
+            android:label="Admision"/>
+        <activity
+            android:name=".Becas_uni_detalle"
+            android:label="Becas" />
+        <activity
+            android:name=".contactos_uni_detalle"
+            android:label="Contactos" />
+        <activity
+            android:name=".videos_detalle"
+            android:label="Videos" />
+        <activity
+            android:name=".fotos_detalles"
+            android:label="Fotos" />
         <activity
             android:name=".Uni_detalle"
             android:label="Universidad" />
