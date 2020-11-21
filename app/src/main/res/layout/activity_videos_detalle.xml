@@ -58,7 +58,7 @@
             <WebView
                 android:id="@+id/video_uni1"
                 android:layout_width="match_parent"
-                android:layout_height="282dp" >
+                android:layout_height="match_parent">
 
             </WebView>
 
@@ -71,7 +71,7 @@
             <WebView
                 android:id="@+id/video_uni2"
                 android:layout_width="match_parent"
-                android:layout_height="282dp" >
+                android:layout_height="match_parent">
 
             </WebView>
 
@@ -100,6 +100,28 @@
                 android:layout_height="match_parent" />
 
             <TextView
+                android:id="@+id/esp_blanco11"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:textSize="24sp" />
+
+            <WebView
+                android:id="@+id/video_uni5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/esp_blanco12"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:textSize="24sp" />
+
+            <WebView
+                android:id="@+id/video_uni6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
                 android:id="@+id/subtitulo_uni_v3"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -109,7 +131,7 @@
                 android:textSize="18sp" />
 
             <WebView
-                android:id="@+id/video_uni5"
+                android:id="@+id/video_uni7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
 

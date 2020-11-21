@@ -321,7 +321,7 @@ Button uimqroo;
                     public void onClick(View v) {
                         // Do something in response to button click
                         Intent univerisdad = new Intent( getActivity() , Uni_detalle.class);
-                        univerisdad.putExtra("uni","unisur_benito_juarez");
+                        univerisdad.putExtra("uni","instituto_sup_leyes_benito_juarez");
                         startActivity(univerisdad);
                     }
                 });
