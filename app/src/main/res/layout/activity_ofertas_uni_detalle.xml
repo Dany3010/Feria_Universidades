@@ -6,4 +6,105 @@
     android:layout_height="match_parent"
     tools:context=".Ofertas_uni_detalle">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tituloUni_Ofertas"
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imagenUni_Of1"
+                android:layout_width="match_parent"
+                android:layout_height="174dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/esp_blanco18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/subtituloUni_Ofertas"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginTop="30dp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/esp_blanco19"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:textSize="24sp" />
+
+            <WebView
+                android:id="@+id/webOfert"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+            </WebView>
+
+            <TextView
+                android:id="@+id/esp_blanco20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp" />
+
+            <WebView
+                android:id="@+id/webOfert2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/esp_blanco22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp" />
+
+            <WebView
+                android:id="@+id/webOfert3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/esp_blanco23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp" />
+
+            <WebView
+                android:id="@+id/webOfert4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+            </WebView>
+
+            <TextView
+                android:id="@+id/esp_blanco24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp" />
+
+            <WebView
+                android:id="@+id/webOfert5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

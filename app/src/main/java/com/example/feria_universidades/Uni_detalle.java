@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -623,8 +624,9 @@ public class Uni_detalle extends AppCompatActivity {
             ofertas.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
                     // Do something in response to button click
-                    Intent univerisdad = new Intent(context, Ofertas_uni_detalle.class);
-                    univerisdad.putExtra("universidad5","inst_tec_felipe_ofertas");
+                    String url="https://www.carrillopuerto.tecnm.mx/index.php/oferta-academica/unidad-acad-fcp#tab";
+                    Uri uri = Uri.parse(url);
+                    Intent univerisdad = new Intent(Intent.ACTION_VIEW, uri);
                     startActivity(univerisdad);
                 }
             });
