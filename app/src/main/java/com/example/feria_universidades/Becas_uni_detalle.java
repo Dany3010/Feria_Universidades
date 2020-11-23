@@ -390,5 +390,254 @@ public class Becas_uni_detalle extends AppCompatActivity {
             myWebView1.loadUrl("https://drive.google.com/file/d/1FP6ndty-7juOS1YMdzBYcgzqNIhwW8RM/preview");
 
         }
+        /////BENITO JUÁREZ///////
+        if (valor.equals("upqroo_benito_juarez_becas")){
+            recibidor.setText("Universidad Politécnica de Quintana Roo");
+            imagen_uni.setImageResource(R.drawable.upqroo_benito_juarez);
+            recibidor2.setText("BECAS PARA ESTUDIANTES");
+
+            //////mostrar
+            myWebView1.setVisibility(View.VISIBLE);
+
+            //////////////
+            myWebView1.getSettings().setJavaScriptEnabled(true);
+
+
+
+            myWebView1.setWebViewClient(new WebViewClient() {
+                @Override
+                public void onPageStarted(WebView view, String url, Bitmap favicon){
+                    super.onPageStarted(view, url, favicon);
+
+                }
+
+                @Override
+                public void onPageFinished(WebView view, String url) {
+                    super.onPageFinished(view, url);
+
+                }
+            });
+            //Carga url de .PDF en WebView  mediante Google Drive Viewer.
+            myWebView1.loadUrl("https://drive.google.com/file/d/1KXqWN6_ArJrnHbftt8SnUSFb02HcQxH_/preview");
+
+        }
+
+        if (valor.equals("ut_benito_juarez_becas")){
+            recibidor.setText("Universidad Tecnológica de Cancún");
+            imagen_uni.setImageResource(R.drawable.ut_benito_juarez);
+            recibidor2.setText("BECAS PARA ESTUDIANTES");
+
+            //////mostrar
+            myWebView1.setVisibility(View.VISIBLE);
+
+            //////////////
+            myWebView1.getSettings().setJavaScriptEnabled(true);
+
+
+
+            myWebView1.setWebViewClient(new WebViewClient() {
+                @Override
+                public void onPageStarted(WebView view, String url, Bitmap favicon){
+                    super.onPageStarted(view, url, favicon);
+
+                }
+
+                @Override
+                public void onPageFinished(WebView view, String url) {
+                    super.onPageFinished(view, url);
+
+                }
+            });
+            //Carga url de .PDF en WebView  mediante Google Drive Viewer.
+            myWebView1.loadUrl("https://drive.google.com/file/d/1dzFKrEByCb12Q6nvuUWuwshEYjH94ic_/preview");
+
+
+        }
+        if (valor.equals("henbord_benito_juarez_becas")){
+            recibidor.setText("Universidad Henbord");
+            imagen_uni.setImageResource(R.drawable.uni_henbord_benito_juarez);
+            recibidor2.setText("BECAS PARA ESTUDIANTES");
+
+            //////mostrar
+            myWebView1.setVisibility(View.VISIBLE);
+
+            //////////////
+            myWebView1.getSettings().setJavaScriptEnabled(true);
+
+
+
+            myWebView1.setWebViewClient(new WebViewClient() {
+                @Override
+                public void onPageStarted(WebView view, String url, Bitmap favicon){
+                    super.onPageStarted(view, url, favicon);
+
+                }
+
+                @Override
+                public void onPageFinished(WebView view, String url) {
+                    super.onPageFinished(view, url);
+
+                }
+            });
+            //Carga url de .PDF en WebView  mediante Google Drive Viewer.
+            myWebView1.loadUrl("https://drive.google.com/file/d/1XKJxFG845-nTaTDy-RGJTfTH2g4KHpaL/preview");
+
+        }
+        if (valor.equals("uni_azteca_benito_juarez_becas")){
+            recibidor.setText("Universidad Azteca");
+            imagen_uni.setImageResource(R.drawable.uni_azteca_benito_juarez);
+            recibidor2.setText("BECAS PARA ESTUDIANTES");
+
+            //////mostrar
+            myWebView1.setVisibility(View.VISIBLE);
+
+            //////////////
+            myWebView1.getSettings().setJavaScriptEnabled(true);
+
+
+
+            myWebView1.setWebViewClient(new WebViewClient() {
+                @Override
+                public void onPageStarted(WebView view, String url, Bitmap favicon){
+                    super.onPageStarted(view, url, favicon);
+
+                }
+
+                @Override
+                public void onPageFinished(WebView view, String url) {
+                    super.onPageFinished(view, url);
+
+                }
+            });
+            //Carga url de .PDF en WebView  mediante Google Drive Viewer.
+            myWebView1.loadUrl("https://drive.google.com/file/d/1DUpnylrV9joRMR4w7y1jax9NTUFd98Yb/preview");
+
+        }
+        if (valor.equals("centro_gestalt_benito_juarez_becas")){
+            recibidor.setText("Cento de Estudios Gestalt");
+            imagen_uni.setImageResource(R.drawable.centro_gestalt_benito_juarez);
+            recibidor2.setText("BECAS PARA ESTUDIANTES");
+
+            //////mostrar
+            myWebView1.setVisibility(View.VISIBLE);
+
+            //////////////
+            myWebView1.getSettings().setJavaScriptEnabled(true);
+
+
+
+            myWebView1.setWebViewClient(new WebViewClient() {
+                @Override
+                public void onPageStarted(WebView view, String url, Bitmap favicon){
+                    super.onPageStarted(view, url, favicon);
+
+                }
+
+                @Override
+                public void onPageFinished(WebView view, String url) {
+                    super.onPageFinished(view, url);
+
+                }
+            });
+            //Carga url de .PDF en WebView  mediante Google Drive Viewer.
+            myWebView1.loadUrl("https://drive.google.com/file/d/1A7Z4Lzwn_pZ-LfcSLZK2DRmVYA9ToQib/preview");
+
+        }
+        if (valor.equals("la_salle_benito_juarez_becas")){
+            recibidor.setText("La Salle Campus Cancún");
+            imagen_uni.setImageResource(R.drawable.la_salle_benito_juarez);
+            recibidor2.setText("BECAS PARA ESTUDIANTES");
+
+            //////mostrar
+            myWebView1.setVisibility(View.VISIBLE);
+
+            //////////////
+            myWebView1.getSettings().setJavaScriptEnabled(true);
+
+
+
+            myWebView1.setWebViewClient(new WebViewClient() {
+                @Override
+                public void onPageStarted(WebView view, String url, Bitmap favicon){
+                    super.onPageStarted(view, url, favicon);
+
+                }
+
+                @Override
+                public void onPageFinished(WebView view, String url) {
+                    super.onPageFinished(view, url);
+
+                }
+            });
+            //Carga url de .PDF en WebView  mediante Google Drive Viewer.
+            myWebView1.loadUrl("https://drive.google.com/file/d/1qkE5a6OiVtKe_-EwUH7f32jCYDFPHYL9/preview");
+
+        }
+        if (valor.equals("inst_humanista_benito_juarez_becas")){
+            recibidor.setText("Instituto Humanista de Psicoterapia Gestalt");
+            imagen_uni.setImageResource(R.drawable.inst_humanista_gestalt_benito_juarez);
+            recibidor2.setText("SIN BECAS PARA ESTUDIANTES POR EL MOMENTO");
+
+        }
+        if (valor.equals("unisur_benito_juarez_becas")){
+            recibidor.setText("Universidad del Sur Campus Cancún");
+            imagen_uni.setImageResource(R.drawable.unisur_benito_juarez);
+            recibidor2.setText("BECAS PARA ESTUDIANTES");
+
+            //////mostrar
+            myWebView1.setVisibility(View.VISIBLE);
+
+            //////////////
+            myWebView1.getSettings().setJavaScriptEnabled(true);
+
+
+
+            myWebView1.setWebViewClient(new WebViewClient() {
+                @Override
+                public void onPageStarted(WebView view, String url, Bitmap favicon){
+                    super.onPageStarted(view, url, favicon);
+
+                }
+
+                @Override
+                public void onPageFinished(WebView view, String url) {
+                    super.onPageFinished(view, url);
+
+                }
+            });
+            //Carga url de .PDF en WebView  mediante Google Drive Viewer.
+            myWebView1.loadUrl("https://drive.google.com/file/d/1Nph7KzD_2HOIc86d5UNAHzAiX3Oo7s60/preview");
+
+        }
+        if (valor.equals("sup_leyes_benito_juarez_becas")){
+            recibidor.setText("Instituto Superior de Leyes");
+            imagen_uni.setImageResource(R.drawable.instituto_sup_leyes_benito_juarez);
+            recibidor2.setText("BECAS PARA ESTUDIANTES");
+
+            //////mostrar
+            myWebView1.setVisibility(View.VISIBLE);
+
+            //////////////
+            myWebView1.getSettings().setJavaScriptEnabled(true);
+
+
+
+            myWebView1.setWebViewClient(new WebViewClient() {
+                @Override
+                public void onPageStarted(WebView view, String url, Bitmap favicon){
+                    super.onPageStarted(view, url, favicon);
+
+                }
+
+                @Override
+                public void onPageFinished(WebView view, String url) {
+                    super.onPageFinished(view, url);
+
+                }
+            });
+            //Carga url de .PDF en WebView  mediante Google Drive Viewer.
+            myWebView1.loadUrl("https://drive.google.com/file/d/1zbhLS6LcvO8gMvZ13Ebrx5zmsC4ONJ4E/preview");
+
+        }
     }
 }
