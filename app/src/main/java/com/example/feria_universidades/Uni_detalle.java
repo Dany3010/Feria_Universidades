@@ -398,9 +398,12 @@ public class Uni_detalle extends AppCompatActivity {
             admision.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
                     // Do something in response to button click
-                    Intent univerisdad = new Intent(context, Admision_uni_detalle.class);
+                    String url="http://www.utchetumal.edu.mx/index/examen-de-admision/";
+                    Uri uri = Uri.parse(url);
+                    Intent univerisdad = new Intent(Intent.ACTION_VIEW, uri);
                     univerisdad.putExtra("universidad4","ut_chetumal_admis");
                     startActivity(univerisdad);
+
                 }
             });
             ofertas.setOnClickListener(new View.OnClickListener() {
@@ -627,6 +630,7 @@ public class Uni_detalle extends AppCompatActivity {
                     String url="https://www.carrillopuerto.tecnm.mx/index.php/oferta-academica/unidad-acad-fcp#tab";
                     Uri uri = Uri.parse(url);
                     Intent univerisdad = new Intent(Intent.ACTION_VIEW, uri);
+                    univerisdad.putExtra("universidad4","tec_felipe_c_admis");
                     startActivity(univerisdad);
                 }
             });
