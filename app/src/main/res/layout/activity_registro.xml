@@ -68,6 +68,7 @@
                 android:background="@drawable/et_bg"
                 android:hint="Nombre(s)"
                 android:inputType="textPersonName"
+                android:maxLength="15"
                 android:padding="16dp"
                 android:textColor="#FFFFFF"
                 android:textColorHint="@color/login_form_details" />
@@ -80,6 +81,7 @@
                 android:background="@drawable/et_bg"
                 android:hint="Apellido paterno"
                 android:inputType="textPersonName"
+                android:maxLength="10"
                 android:padding="16dp"
                 android:textColor="#FFFFFF"
                 android:textColorHint="@color/login_form_details" />
@@ -92,6 +94,7 @@
                 android:background="@drawable/et_bg"
                 android:hint="Apellido Materno"
                 android:inputType="textPersonName"
+                android:maxLength="10"
                 android:padding="16dp"
                 android:textColor="#FFFFFF"
                 android:textColorHint="@color/login_form_details" />
@@ -104,6 +107,7 @@
                 android:background="@drawable/et_bg"
                 android:hint="Telefono"
                 android:inputType="phone"
+                android:maxLength="10"
                 android:padding="16dp"
                 android:textColor="#FFFFFF"
                 android:textColorHint="@color/login_form_details" />
@@ -116,6 +120,7 @@
                 android:background="@drawable/et_bg"
                 android:hint="Preparatoria de Procedencia"
                 android:inputType="text"
+                android:maxLength="10"
                 android:padding="16dp"
                 android:textColor="#FFFFFF"
                 android:textColorHint="@color/login_form_details" />
@@ -128,6 +133,7 @@
                 android:background="@drawable/et_bg"
                 android:hint="Promedio Final"
                 android:inputType="numberDecimal"
+                android:maxLength="3"
                 android:padding="16dp"
                 android:textColor="#FFFFFF"
                 android:textColorHint="@color/login_form_details" />
@@ -140,6 +146,7 @@
                 android:background="@drawable/et_bg"
                 android:hint="@string/email_address"
                 android:inputType="textEmailAddress"
+                android:maxLength="20"
                 android:padding="16dp"
                 android:textColor="#FFFFFF"
                 android:textColorHint="@color/login_form_details" />
@@ -151,10 +158,12 @@
                 android:layout_margin="20dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/et_bg"
-                android:drawableEnd="@drawable/ic_eye"
+
                 android:hint="@string/password"
                 android:inputType="textPassword"
+                android:maxLength="10"
                 android:padding="16dp"
+                android:password="true"
                 android:textColor="#FFFFFF"
                 android:textColorHint="@color/login_form_details" />
 
