@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -42,6 +43,7 @@ public class Login extends AppCompatActivity {
 
     EditText edtUsuario, edtPassword;
     Button btnLogin;
+    TextView btn2;
     String usuario;
     String password, nombre;
 
@@ -52,6 +54,7 @@ public class Login extends AppCompatActivity {
         edtUsuario=findViewById(R.id.username);
         edtPassword=findViewById(R.id.password);
         btnLogin=findViewById(R.id.btn_login);
+        btn2=(TextView)findViewById(R.id.btn_registro);
 recuperarPreferencias();
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,6 +64,15 @@ recuperarPreferencias();
                 if (!usuario.isEmpty() && !password.isEmpty()){
                 validarUsuario("https://feria-universidades2020.000webhostapp.com/android/validar_usuario.php");
             }else{Toast.makeText(Login.this, "No se permiten campos vacios",Toast.LENGTH_SHORT).show();}
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),Registro.class);
+                startActivity(intent);
+                finish();
             }
         });
     }
