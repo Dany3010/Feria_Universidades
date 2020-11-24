@@ -15,8 +15,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Registro"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"  ></activity>
+        <activity
+            android:name=".Registro"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".Ofertas_uni_detalle"
             android:label="Ofertas" />

@@ -1,7 +1,5 @@
 package com.example.feria_universidades;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -10,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Uni_detalle extends AppCompatActivity {
   ImageView imagen_uni;
@@ -35,8 +35,10 @@ public class Uni_detalle extends AppCompatActivity {
         contactos =(Button)findViewById(R.id.contactos_uni);
 
 
+
+
         /////OTHON P. BLANCO////////
-        if (valor.equals("uni_itzm")){
+        if (valor.equals("uni_itzm") ){
             recibidor.setText("Instituto Tecnológico de la Zona Maya");
             imagen_uni.setImageResource(R.drawable.itzm);
 
@@ -251,171 +253,7 @@ public class Uni_detalle extends AppCompatActivity {
             });
 
         }
-        if (valor.equals("uni_wozniak")){
-            recibidor.setText("Instituto de Estudios Superiores Wozniak");
-            imagen_uni.setImageResource(R.drawable.wozniak);
 
-            contactos.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, contactos_uni_detalle.class);
-                    univerisdad.putExtra("universidad","uni_wozniak_contac");
-                    startActivity(univerisdad);
-                }
-            });
-            videos.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, videos_detalle.class);
-                    univerisdad.putExtra("universidad1","uni_wozniak_videos");
-                    startActivity(univerisdad);
-                }
-            });
-            fotos.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, fotos_detalles.class);
-                    univerisdad.putExtra("universidad2","uni_wozniak_fotos");
-                    startActivity(univerisdad);
-                }
-            });
-            becas.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, Becas_uni_detalle.class);
-                    univerisdad.putExtra("universidad3","uni_wozniak_becas");
-                    startActivity(univerisdad);
-                }
-            });
-            admision.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, Admision_uni_detalle.class);
-                    univerisdad.putExtra("universidad4","uni_wozniak_admis");
-                    startActivity(univerisdad);
-                }
-            });
-            ofertas.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, Ofertas_uni_detalle.class);
-                    univerisdad.putExtra("universidad5","uni_wozniak_ofertas");
-                    startActivity(univerisdad);
-                }
-            });
-
-        }
-        if (valor.equals("uqroo_chetumal")){
-            recibidor.setText("Universidad de Quintana Roo Campo Chetumal");
-            imagen_uni.setImageResource(R.drawable.uqroo);
-
-            contactos.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, contactos_uni_detalle.class);
-                    univerisdad.putExtra("universidad","uqroo_chetumal_contac");
-                    startActivity(univerisdad);
-                }
-            });
-            videos.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, videos_detalle.class);
-                    univerisdad.putExtra("universidad1","uqroo_chetumal_videos");
-                    startActivity(univerisdad);
-                }
-            });
-            fotos.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, fotos_detalles.class);
-                    univerisdad.putExtra("universidad2","uqroo_chetumal_fotos");
-                    startActivity(univerisdad);
-                }
-            });
-            becas.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, Becas_uni_detalle.class);
-                    univerisdad.putExtra("universidad3","uqroo_chetumal_becas");
-                    startActivity(univerisdad);
-                }
-            });
-            admision.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, Admision_uni_detalle.class);
-                    univerisdad.putExtra("universidad4","uqroo_chetumal_admis");
-                    startActivity(univerisdad);
-                }
-            });
-            ofertas.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, Ofertas_uni_detalle.class);
-                    univerisdad.putExtra("universidad5","uqroo_chetumal_ofertas");
-                    startActivity(univerisdad);
-                }
-            });
-
-        }
-        if (valor.equals("ut_chetumal")){
-            recibidor.setText("Universidad Tecnológica de Chetumal");
-            imagen_uni.setImageResource(R.drawable.ut_chetumal);
-
-            contactos.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, contactos_uni_detalle.class);
-                    univerisdad.putExtra("universidad","ut_chetumal_contac");
-                    startActivity(univerisdad);
-                }
-            });
-            videos.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, videos_detalle.class);
-                    univerisdad.putExtra("universidad1","ut_chetumal_videos");
-                    startActivity(univerisdad);
-                }
-            });
-            fotos.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, fotos_detalles.class);
-                    univerisdad.putExtra("universidad2","ut_chetumal_fotos");
-                    startActivity(univerisdad);
-                }
-            });
-            becas.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, Becas_uni_detalle.class);
-                    univerisdad.putExtra("universidad3","ut_chetumal_becas");
-                    startActivity(univerisdad);
-                }
-            });
-            admision.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    String url="http://www.utchetumal.edu.mx/index/examen-de-admision/";
-                    Uri uri = Uri.parse(url);
-                    Intent univerisdad = new Intent(Intent.ACTION_VIEW, uri);
-                    univerisdad.putExtra("universidad4","ut_chetumal_admis");
-                    startActivity(univerisdad);
-
-                }
-            });
-            ofertas.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, Ofertas_uni_detalle.class);
-                    univerisdad.putExtra("universidad5","ut_chetumal_ofertas");
-                    startActivity(univerisdad);
-                }
-            });
-
-        }
         ///////BACALAR/////////
         if (valor.equals("politec_bacalar")){
             recibidor.setText("Universidad Politécnica de Bacalar");
@@ -908,60 +746,7 @@ public class Uni_detalle extends AppCompatActivity {
             });
 
         }
-        if (valor.equals("esc_enfermeria_soli")){
-            recibidor.setText("Escuela de enfermería Ignacio Chávez");
-            imagen_uni.setImageResource(R.drawable.esc_enfermeria_solidaridad);
 
-            contactos.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, contactos_uni_detalle.class);
-                    univerisdad.putExtra("universidad","esc_enfermeria_soli_contac");
-                    startActivity(univerisdad);
-                }
-            });
-            videos.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, videos_detalle.class);
-                    univerisdad.putExtra("universidad1","esc_enfermeria_soli_videos");
-                    startActivity(univerisdad);
-                }
-            });
-            fotos.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, fotos_detalles.class);
-                    univerisdad.putExtra("universidad2","esc_enfermeria_soli_fotos");
-                    startActivity(univerisdad);
-                }
-            });
-            becas.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, Becas_uni_detalle.class);
-                    univerisdad.putExtra("universidad3","esc_enfermeria_soli_becas");
-                    startActivity(univerisdad);
-                }
-            });
-            admision.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, Admision_uni_detalle.class);
-                    univerisdad.putExtra("universidad4","esc_enfermeria_soli_admis");
-                    startActivity(univerisdad);
-                }
-            });
-            ofertas.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, Ofertas_uni_detalle.class);
-                    univerisdad.putExtra("universidad5","esc_enfermeria_soli_ofertas");
-                    startActivity(univerisdad);
-                }
-            });
-
-        }
         /////COZUMEL///////
         if (valor.equals("inst_partenon_cozumel")){
             recibidor.setText("Instituto Partenón de Cozumel");
@@ -1236,114 +1021,6 @@ public class Uni_detalle extends AppCompatActivity {
             });
 
         }
-        if (valor.equals("inst_humanista_gestalt_benito_juarez")){
-            recibidor.setText("Instituto Humanista de Psicoterapia Gestalt");
-            imagen_uni.setImageResource(R.drawable.inst_humanista_gestalt_benito_juarez);
-
-            contactos.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, contactos_uni_detalle.class);
-                    univerisdad.putExtra("universidad","inst_humanista_benito_juarez_contac");
-                    startActivity(univerisdad);
-                }
-            });
-            videos.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, videos_detalle.class);
-                    univerisdad.putExtra("universidad1","inst_humanista_benito_juarez_videos");
-                    startActivity(univerisdad);
-                }
-            });
-            fotos.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, fotos_detalles.class);
-                    univerisdad.putExtra("universidad2","inst_humanista_juarez_fotos");
-                    startActivity(univerisdad);
-                }
-            });
-            becas.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, Becas_uni_detalle.class);
-                    univerisdad.putExtra("universidad3","inst_humanista_benito_juarez_becas");
-                    startActivity(univerisdad);
-                }
-            });
-            admision.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, Admision_uni_detalle.class);
-                    univerisdad.putExtra("universidad4","inst_humanista_benito_juarez_admis");
-                    startActivity(univerisdad);
-                }
-            });
-            ofertas.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, Ofertas_uni_detalle.class);
-                    univerisdad.putExtra("universidad5","inst_humanista_benito_juarez_ofertas");
-                    startActivity(univerisdad);
-                }
-            });
-
-        }
-        if (valor.equals("la_salle_benito_juarez")){
-            recibidor.setText("La Salle Campus Cancún");
-            imagen_uni.setImageResource(R.drawable.la_salle_benito_juarez);
-
-            contactos.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, contactos_uni_detalle.class);
-                    univerisdad.putExtra("universidad","la_salle_benito_juarez_contac");
-                    startActivity(univerisdad);
-                }
-            });
-            videos.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, videos_detalle.class);
-                    univerisdad.putExtra("universidad1","la_salle_benito_juarez_videos");
-                    startActivity(univerisdad);
-                }
-            });
-            fotos.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, fotos_detalles.class);
-                    univerisdad.putExtra("universidad2","la_salle_juarez_fotos");
-                    startActivity(univerisdad);
-                }
-            });
-            becas.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, Becas_uni_detalle.class);
-                    univerisdad.putExtra("universidad3","la_salle_benito_juarez_becas");
-                    startActivity(univerisdad);
-                }
-            });
-            admision.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, Admision_uni_detalle.class);
-                    univerisdad.putExtra("universidad4","la_salle_benito_juarez_admis");
-                    startActivity(univerisdad);
-                }
-            });
-            ofertas.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, Ofertas_uni_detalle.class);
-                    univerisdad.putExtra("universidad5","la_salle_benito_juarez_ofertas");
-                    startActivity(univerisdad);
-                }
-            });
-
-        }
         if (valor.equals("centro_gestalt_benito_juarez")){
             recibidor.setText("Cento de Estudios Gestalt");
             imagen_uni.setImageResource(R.drawable.centro_gestalt_benito_juarez);
@@ -1398,115 +1075,8 @@ public class Uni_detalle extends AppCompatActivity {
             });
 
         }
-        if (valor.equals("unisur_benito_juarez")){
-            recibidor.setText("Universidad del Sur Campus Cancún");
-            imagen_uni.setImageResource(R.drawable.unisur_benito_juarez);
 
-            contactos.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, contactos_uni_detalle.class);
-                    univerisdad.putExtra("universidad","unisur_benito_juarez_contac");
-                    startActivity(univerisdad);
-                }
-            });
-            videos.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, videos_detalle.class);
-                    univerisdad.putExtra("universidad1","unisur_benito_juarez_videos");
-                    startActivity(univerisdad);
-                }
-            });
-            fotos.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, fotos_detalles.class);
-                    univerisdad.putExtra("universidad2","unisur_juarez_fotos");
-                    startActivity(univerisdad);
-                }
-            });
-            becas.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, Becas_uni_detalle.class);
-                    univerisdad.putExtra("universidad3","unisur_benito_juarez_becas");
-                    startActivity(univerisdad);
-                }
-            });
-            admision.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, Admision_uni_detalle.class);
-                    univerisdad.putExtra("universidad4","unisur_benito_juarez_admis");
-                    startActivity(univerisdad);
-                }
-            });
-            ofertas.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, Ofertas_uni_detalle.class);
-                    univerisdad.putExtra("universidad5","unisur_benito_juarez_ofertas");
-                    startActivity(univerisdad);
-                }
-            });
-
-        }
-        if (valor.equals("instituto_sup_leyes_benito_juarez")){
-            recibidor.setText("Instituto Superior de Leyes");
-            imagen_uni.setImageResource(R.drawable.instituto_sup_leyes_benito_juarez);
-
-            contactos.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, contactos_uni_detalle.class);
-                    univerisdad.putExtra("universidad","sup_leyes_benito_juarez_contac");
-                    startActivity(univerisdad);
-                }
-            });
-            videos.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, videos_detalle.class);
-                    univerisdad.putExtra("universidad1","sup_leyes_benito_juarez_videos");
-                    startActivity(univerisdad);
-                }
-            });
-            fotos.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, fotos_detalles.class);
-                    univerisdad.putExtra("universidad2","sup_leyes_juarez_fotos");
-                    startActivity(univerisdad);
-                }
-            });
-            becas.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, Becas_uni_detalle.class);
-                    univerisdad.putExtra("universidad3","sup_leyes_benito_juarez_becas");
-                    startActivity(univerisdad);
-                }
-            });
-            admision.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, Admision_uni_detalle.class);
-                    univerisdad.putExtra("universidad4","sup_leyes_benito_juarez_admis");
-                    startActivity(univerisdad);
-                }
-            });
-            ofertas.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Do something in response to button click
-                    Intent univerisdad = new Intent(context, Ofertas_uni_detalle.class);
-                    univerisdad.putExtra("universidad5","sup_leyes_benito_juarez_ofertas");
-                    startActivity(univerisdad);
-                }
-            });
 
         }
 
     }
-
-}

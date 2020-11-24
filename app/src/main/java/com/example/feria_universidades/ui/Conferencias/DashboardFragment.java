@@ -1,4 +1,4 @@
-package com.example.feria_universidades.ui.dashboard;
+package com.example.feria_universidades.ui.Conferencias;
 
 import android.net.Uri;
 import android.os.Bundle;

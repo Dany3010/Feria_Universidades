@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo2"
-    tools:context=".ui.notifications.NotificationsFragment">
+    tools:context=".ui.Universidades.UniversidadFragment">
 
     <TextView
         android:id="@+id/text_notifications"
@@ -173,79 +173,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:background="@drawable/uni_modelo_chetumal" />
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="20dp"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="40dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="174dp"
-                    android:layout_gravity="center_horizontal"
-                    android:orientation="horizontal">
-
-                    <Button
-                        android:id="@+id/uni_wozniak"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/wozniak" />
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="20dp"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="40dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="174dp"
-                    android:layout_gravity="center_horizontal"
-                    android:orientation="horizontal">
-
-                    <Button
-                        android:id="@+id/uqroo_chetumal"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-
-                        android:background="@drawable/uqroo" />
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="20dp"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="40dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="174dp"
-                    android:layout_gravity="center_horizontal"
-                    android:orientation="horizontal">
-
-                    <Button
-                        android:id="@+id/ut_chetumal"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/ut_chetumal" />
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -567,28 +494,6 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="20dp"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="40dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="174dp"
-                    android:layout_gravity="center_horizontal"
-                    android:orientation="horizontal">
-
-                    <Button
-                        android:id="@+id/esc_enfermeria_soli"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/esc_enfermeria_solidaridad" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <LinearLayout
@@ -765,94 +670,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@drawable/centro_gestalt_benito_juarez" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="20dp"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="40dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="174dp"
-                    android:layout_gravity="center_horizontal"
-                    android:orientation="horizontal">
-
-                    <Button
-                        android:id="@+id/la_salle_benito_juarez"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/la_salle_benito_juarez" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="20dp"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="40dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="174dp"
-                    android:layout_gravity="center_horizontal"
-                    android:orientation="horizontal">
-
-                    <Button
-                        android:id="@+id/inst_humanista_gestalt_benito_juarez"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/inst_humanista_gestalt_benito_juarez" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="20dp"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="40dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="174dp"
-                    android:layout_gravity="center_horizontal"
-                    android:orientation="horizontal">
-
-                    <Button
-                        android:id="@+id/unisur_benito_juarez"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/unisur_benito_juarez" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="20dp"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="40dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="174dp"
-                    android:layout_gravity="center_horizontal"
-                    android:orientation="horizontal">
-
-                    <Button
-                        android:id="@+id/instituto_sup_leyes_benito_juarez"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/instituto_sup_leyes_benito_juarez" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
