@@ -1,14 +1,14 @@
-package com.example.feria_universidades.ui.dashboard;
+package com.example.feria_universidades.ui.Universidades;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class DashboardViewModel extends ViewModel {
+public class UniversidadViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public DashboardViewModel() {
+    public UniversidadViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("");
     }

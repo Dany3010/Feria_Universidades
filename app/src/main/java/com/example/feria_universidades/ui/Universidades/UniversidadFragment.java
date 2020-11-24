@@ -1,4 +1,4 @@
-package com.example.feria_universidades.ui.notifications;
+package com.example.feria_universidades.ui.Universidades;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,9 +17,9 @@ import androidx.lifecycle.ViewModelProviders;
 import com.example.feria_universidades.R;
 import com.example.feria_universidades.Uni_detalle;
 
-public class NotificationsFragment extends Fragment {
+public class UniversidadFragment extends Fragment {
     /////OTHON P. BLANCO////////
-Button itzm,cudv,unid_chetumal,uni_modelo_chetumal,uni_wozniak,uqroo_chetumal,ut_chetumal;
+Button itzm,cudv,unid_chetumal,uni_modelo_chetumal;
 
     /////BACALAR////////
 Button uni_poli_bacalar,centro_regio_edu_bacalar;
@@ -31,21 +31,20 @@ Button uni_poli_bacalar,centro_regio_edu_bacalar;
 Button uimqroo;
 
     /////SOLIDARIDAD///////
-    Button UniversidadSur_soli,universidadriviera_soli,ut_rivieramaya_soli,unid_soli,esc_enfermeria_soli;
+    Button UniversidadSur_soli,universidadriviera_soli,ut_rivieramaya_soli,unid_soli;
 
     /////COZUMEL///////
-    Button inst_partenon_cozumel;
+    Button inst_partenon_cozumel,buscardor;
 
     /////BENITO JUÁREZ///////
     Button upqroo_benito_juarez,ut_benito_juarez,uni_henbord_benito_juarez,uni_azteca_benito_juarez,centro_gestalt_benito_juarez;
-    Button la_salle_benito_juarez,inst_humanista_gestalt_benito_juarez,unisur_benito_juarez,instituto_sup_leyes_benito_juarez;
 
-    private NotificationsViewModel notificationsViewModel;
+    private UniversidadViewModel universidadViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        notificationsViewModel =
-                ViewModelProviders.of(this).get(NotificationsViewModel.class);
+        universidadViewModel =
+                ViewModelProviders.of(this).get(UniversidadViewModel.class);
         View root = inflater.inflate(R.layout.fragment_universidades, container, false);
         final TextView textView = root.findViewById(R.id.text_notifications);
 
@@ -54,9 +53,7 @@ Button uimqroo;
         cudv =(Button)root.findViewById(R.id.cudv);
         unid_chetumal =(Button)root.findViewById(R.id.unid_chetumal);
         uni_modelo_chetumal =(Button)root.findViewById(R.id.uni_modelo_chetumal);
-        uni_wozniak =(Button)root.findViewById(R.id.uni_wozniak);
-        uqroo_chetumal =(Button)root.findViewById(R.id.uqroo_chetumal);
-        ut_chetumal =(Button)root.findViewById(R.id.ut_chetumal);
+
 
         /////BACALAR////////
         uni_poli_bacalar =(Button)root.findViewById(R.id.uni_poli_bacalar);
@@ -74,7 +71,7 @@ Button uimqroo;
         universidadriviera_soli =(Button)root.findViewById(R.id.universidadriviera_soli);
         ut_rivieramaya_soli =(Button)root.findViewById(R.id.ut_rivieramaya_soli);
         unid_soli =(Button)root.findViewById(R.id.unid_soli);
-        esc_enfermeria_soli =(Button)root.findViewById(R.id.esc_enfermeria_soli);
+
 
         /////COZUMEL///////
         inst_partenon_cozumel =(Button)root.findViewById(R.id.inst_partenon_cozumel);
@@ -85,15 +82,16 @@ Button uimqroo;
         uni_henbord_benito_juarez =(Button)root.findViewById(R.id.uni_henbord_benito_juarez);
         uni_azteca_benito_juarez =(Button)root.findViewById(R.id.uni_azteca_benito_juarez);
         centro_gestalt_benito_juarez =(Button)root.findViewById(R.id.centro_gestalt_benito_juarez);
-        la_salle_benito_juarez =(Button)root.findViewById(R.id.la_salle_benito_juarez);
-        inst_humanista_gestalt_benito_juarez =(Button)root.findViewById(R.id.inst_humanista_gestalt_benito_juarez);
-        unisur_benito_juarez =(Button)root.findViewById(R.id.unisur_benito_juarez);
-        instituto_sup_leyes_benito_juarez =(Button)root.findViewById(R.id.instituto_sup_leyes_benito_juarez);
 
-        notificationsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+
+
+
+        universidadViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
+
+
                 /////OTHON P. BLANCO////////
                 itzm.setOnClickListener(new View.OnClickListener() {
                     public void onClick(View v) {
@@ -131,32 +129,8 @@ Button uimqroo;
                     }
                 });
 
-                uni_wozniak.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        // Do something in response to button click
-                        Intent univerisdad = new Intent( getActivity() , Uni_detalle.class);
-                        univerisdad.putExtra("uni","uni_wozniak");
-                        startActivity(univerisdad);
-                    }
-                });
 
-                uqroo_chetumal.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        // Do something in response to button click
-                        Intent univerisdad = new Intent( getActivity() , Uni_detalle.class);
-                        univerisdad.putExtra("uni","uqroo_chetumal");
-                        startActivity(univerisdad);
-                    }
-                });
 
-                ut_chetumal.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        // Do something in response to button click
-                        Intent univerisdad = new Intent( getActivity() , Uni_detalle.class);
-                        univerisdad.putExtra("uni","ut_chetumal");
-                        startActivity(univerisdad);
-                    }
-                });
                 ///////BACALAR/////////
                 uni_poli_bacalar.setOnClickListener(new View.OnClickListener() {
                     public void onClick(View v) {
@@ -234,14 +208,7 @@ Button uimqroo;
                         startActivity(univerisdad);
                     }
                 });
-                esc_enfermeria_soli.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        // Do something in response to button click
-                        Intent univerisdad = new Intent( getActivity() , Uni_detalle.class);
-                        univerisdad.putExtra("uni","esc_enfermeria_soli");
-                        startActivity(univerisdad);
-                    }
-                });
+
                 /////COZUMEL///////
                 inst_partenon_cozumel.setOnClickListener(new View.OnClickListener() {
                     public void onClick(View v) {
@@ -285,22 +252,7 @@ Button uimqroo;
                         startActivity(univerisdad);
                     }
                 });
-                inst_humanista_gestalt_benito_juarez.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        // Do something in response to button click
-                        Intent univerisdad = new Intent( getActivity() , Uni_detalle.class);
-                        univerisdad.putExtra("uni","inst_humanista_gestalt_benito_juarez");
-                        startActivity(univerisdad);
-                    }
-                });
-                la_salle_benito_juarez.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        // Do something in response to button click
-                        Intent univerisdad = new Intent( getActivity() , Uni_detalle.class);
-                        univerisdad.putExtra("uni","la_salle_benito_juarez");
-                        startActivity(univerisdad);
-                    }
-                });
+
                 centro_gestalt_benito_juarez.setOnClickListener(new View.OnClickListener() {
                     public void onClick(View v) {
                         // Do something in response to button click
@@ -309,22 +261,7 @@ Button uimqroo;
                         startActivity(univerisdad);
                     }
                 });
-                unisur_benito_juarez.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        // Do something in response to button click
-                        Intent univerisdad = new Intent( getActivity() , Uni_detalle.class);
-                        univerisdad.putExtra("uni","unisur_benito_juarez");
-                        startActivity(univerisdad);
-                    }
-                });
-                instituto_sup_leyes_benito_juarez.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        // Do something in response to button click
-                        Intent univerisdad = new Intent( getActivity() , Uni_detalle.class);
-                        univerisdad.putExtra("uni","instituto_sup_leyes_benito_juarez");
-                        startActivity(univerisdad);
-                    }
-                });
+
             }
         });
         return root;

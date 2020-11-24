@@ -6,4 +6,149 @@
     android:layout_height="match_parent"
     tools:context=".contactos_uni_detalle">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tituloUni_contactos"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imagenUni_contacto"
+                android:layout_width="match_parent"
+                android:layout_height="174dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/espacio_blanco"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/subtituloUni_contacto"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:text="Contactos"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/espacio_blanco2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="287dp"
+                android:layout_height="79dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/facebook"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/facebook" />
+
+                <TextView
+                    android:id="@+id/espacio_blanco3"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/twitter"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/twitter" />
+
+                <TextView
+                    android:id="@+id/espacio_blanco4"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/buscador_web"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/buscador_web" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/espacio_blanco5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="82dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/correo"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/correo" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/espacio_blanco6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/subtituloUni_contact_map"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/espacio_blanco8"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/map_contacto_uni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/espacio_blanco7"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
