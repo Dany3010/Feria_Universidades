@@ -42,6 +42,9 @@
             android:name=".PresentacionActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
+            android:name=".VerificationActivity_1"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
             android:name=".MainActivity2"
             android:label="Test Vocacional" />
         <activity

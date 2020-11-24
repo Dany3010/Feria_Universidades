@@ -21,12 +21,13 @@ import com.android.volley.toolbox.Volley;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Random;
 
 public class Registro extends AppCompatActivity {
     EditText nom, ape_p,ape_m,tel,prepa,prom_final,correo,pass;
     ImageView btn2;
     Button btnRegistar;
-    String a1,a2,a3,a4,a5,a6,a7,a8;
+    String a1,a2,a3,a4,a5,a6,a7,a8,codigo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +41,9 @@ public class Registro extends AppCompatActivity {
         correo=findViewById(R.id.username);
         pass=findViewById(R.id.password);
         btnRegistar=findViewById(R.id.btn_registro);
-
+        Random random= new Random();
+        int numRandom= random.nextInt(9999) ;
+        codigo=String.valueOf(numRandom);
         btnRegistar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,7 +57,18 @@ public class Registro extends AppCompatActivity {
                 a8=pass.getText().toString();
 
                 if (!a1.isEmpty() && !a2.isEmpty() && !a3.isEmpty() && !a4.isEmpty() && !a5.isEmpty() && !a6.isEmpty() && !a7.isEmpty() && !a8.isEmpty() ){
-                    ejecutarServicio("http://feria-universitaria.tk/android/registrar_usuario.php");
+                    Intent intent = new Intent(getApplicationContext(),VerificationActivity_1.class);
+                    intent.putExtra("nom",a1);
+                    intent.putExtra("ape_p",a2);
+                    intent.putExtra("ape_m",a3);
+                    intent.putExtra("tel",a4);
+                    intent.putExtra("prepa",a5);
+                    intent.putExtra("prom_final",a6);
+                    intent.putExtra("correo",a7);
+                    intent.putExtra("pass",a8);
+                    intent.putExtra("codigo",codigo);
+                    startActivity(intent);
+
                 }else{Toast.makeText(Registro.this, "No se permiten campos vacios",Toast.LENGTH_SHORT).show();}
 
             }
@@ -71,40 +85,7 @@ public class Registro extends AppCompatActivity {
     }
 
 
-    private void ejecutarServicio(String URL){
-        StringRequest stringRequest= new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
-            @Override
-            public void onResponse(String response) {
-                Toast.makeText(getApplicationContext(), "USUARIO REGISTRADO", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(getApplicationContext(),Login.class);
-                startActivity(intent);
-                finish();
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                Toast.makeText(getApplicationContext(),error.toString(),Toast.LENGTH_SHORT).show();
-            }
-        }){
-            @Override
-            protected Map<String, String> getParams() throws AuthFailureError {
-                Map<String, String> parametros= new HashMap<String, String>();
-                parametros.put("nom",nom.getText().toString());
-                parametros.put("ape_p",ape_p.getText().toString());
-                parametros.put("ape_m",ape_m.getText().toString());
-                parametros.put("tel",tel.getText().toString());
-                parametros.put("prepa",prepa.getText().toString());
-                parametros.put("prom_final",prom_final.getText().toString());
-                parametros.put("correo",correo.getText().toString());
-                parametros.put("pass",pass.getText().toString());
-                return parametros;
-            }
 
-
-        };
-         RequestQueue requestQueue= Volley.newRequestQueue(this);
-         requestQueue.add(stringRequest);
-    }
 
 
 
