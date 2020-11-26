@@ -10,35 +10,28 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+
+import com.example.feria_universidades.ItemList;
 import com.example.feria_universidades.R;
+import com.example.feria_universidades.RecyclerAdapter;
 import com.example.feria_universidades.Uni_detalle;
 
-public class UniversidadFragment extends Fragment {
-    /////OTHON P. BLANCO////////
-Button itzm,cudv,unid_chetumal,uni_modelo_chetumal;
+import java.util.ArrayList;
+import java.util.List;
 
-    /////BACALAR////////
-Button uni_poli_bacalar,centro_regio_edu_bacalar;
+public class UniversidadFragment extends Fragment implements RecyclerAdapter.RecyclerItemClick, SearchView.OnQueryTextListener{
 
-    /////FELIPE CARRILLO PUERTO////////
-    Button upp,inst_tec_felipe_c;
-
-    /////JOSE MARIA MORELOS///////
-Button uimqroo;
-
-    /////SOLIDARIDAD///////
-    Button UniversidadSur_soli,universidadriviera_soli,ut_rivieramaya_soli,unid_soli;
-
-    /////COZUMEL///////
-    Button inst_partenon_cozumel,buscardor;
-
-    /////BENITO JUÁREZ///////
-    Button upqroo_benito_juarez,ut_benito_juarez,uni_henbord_benito_juarez,uni_azteca_benito_juarez,centro_gestalt_benito_juarez;
-
+    private RecyclerView rvLista;
+    private SearchView svSearch;
+    private RecyclerAdapter adapter;
+    private List<ItemList> items;
     private UniversidadViewModel universidadViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -47,223 +40,65 @@ Button uimqroo;
                 ViewModelProviders.of(this).get(UniversidadViewModel.class);
         View root = inflater.inflate(R.layout.fragment_universidades, container, false);
         final TextView textView = root.findViewById(R.id.text_notifications);
-
-        /////OTHON P. BLANCO////////
-        itzm =(Button)root.findViewById(R.id.itzm);
-        cudv =(Button)root.findViewById(R.id.cudv);
-        unid_chetumal =(Button)root.findViewById(R.id.unid_chetumal);
-        uni_modelo_chetumal =(Button)root.findViewById(R.id.uni_modelo_chetumal);
-
-
-        /////BACALAR////////
-        uni_poli_bacalar =(Button)root.findViewById(R.id.uni_poli_bacalar);
-        centro_regio_edu_bacalar =(Button)root.findViewById(R.id.centro_regio_edu_bacalar);
-
-        /////FELIPE CARRILLO PUERTO////////
-        upp =(Button)root.findViewById(R.id.upp);
-        inst_tec_felipe_c =(Button)root.findViewById(R.id.inst_tec_felipe_c);
-
-        /////JOSE MARIA MORELOS///////
-        uimqroo =(Button)root.findViewById(R.id.uimqroo);
-
-        /////SOLIDARIDAD///////
-        UniversidadSur_soli =(Button)root.findViewById(R.id.UniversidadSur_soli);
-        universidadriviera_soli =(Button)root.findViewById(R.id.universidadriviera_soli);
-        ut_rivieramaya_soli =(Button)root.findViewById(R.id.ut_rivieramaya_soli);
-        unid_soli =(Button)root.findViewById(R.id.unid_soli);
-
-
-        /////COZUMEL///////
-        inst_partenon_cozumel =(Button)root.findViewById(R.id.inst_partenon_cozumel);
-
-        /////BENITO JUÁREZ///////
-        upqroo_benito_juarez =(Button)root.findViewById(R.id.upqroo_benito_juarez);
-        ut_benito_juarez =(Button)root.findViewById(R.id.ut_benito_juarez);
-        uni_henbord_benito_juarez =(Button)root.findViewById(R.id.uni_henbord_benito_juarez);
-        uni_azteca_benito_juarez =(Button)root.findViewById(R.id.uni_azteca_benito_juarez);
-        centro_gestalt_benito_juarez =(Button)root.findViewById(R.id.centro_gestalt_benito_juarez);
-
-
-
-
-        universidadViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-
-
-                /////OTHON P. BLANCO////////
-                itzm.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        // Do something in response to button click
-                        Intent univerisdad = new Intent( getActivity() , Uni_detalle.class);
-                        univerisdad.putExtra("uni","uni_itzm");
-                        startActivity(univerisdad);
-                    }
-                });
-
-                cudv.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        // Do something in response to button click
-                        Intent univerisdad = new Intent( getActivity() , Uni_detalle.class);
-                        univerisdad.putExtra("uni","uni_cudv");
-                        startActivity(univerisdad);
-                    }
-                });
-
-                unid_chetumal.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        // Do something in response to button click
-                        Intent univerisdad = new Intent( getActivity() , Uni_detalle.class);
-                        univerisdad.putExtra("uni","unid_chetumal");
-                        startActivity(univerisdad);
-                    }
-                });
-
-                uni_modelo_chetumal.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        // Do something in response to button click
-                        Intent univerisdad = new Intent( getActivity() , Uni_detalle.class);
-                        univerisdad.putExtra("uni","modelo_chetumal");
-                        startActivity(univerisdad);
-                    }
-                });
-
-
-
-                ///////BACALAR/////////
-                uni_poli_bacalar.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        // Do something in response to button click
-                        Intent univerisdad = new Intent( getActivity() , Uni_detalle.class);
-                        univerisdad.putExtra("uni","politec_bacalar");
-                        startActivity(univerisdad);
-                    }
-                });
-                centro_regio_edu_bacalar.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        // Do something in response to button click
-                        Intent univerisdad = new Intent( getActivity() , Uni_detalle.class);
-                        univerisdad.putExtra("uni","centro_edu_bacalar");
-                        startActivity(univerisdad);
-                    }
-                });
-                /////FELIPE CARRILLO PUERTO////////
-                upp.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        // Do something in response to button click
-                        Intent univerisdad = new Intent( getActivity() , Uni_detalle.class);
-                        univerisdad.putExtra("uni","upp");
-                        startActivity(univerisdad);
-                    }
-                });
-                inst_tec_felipe_c.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        // Do something in response to button click
-                        Intent univerisdad = new Intent( getActivity() , Uni_detalle.class);
-                        univerisdad.putExtra("uni","inst_tec_felipe_c");
-                        startActivity(univerisdad);
-                    }
-                });
-                /////JOSE MARIA MORELOS///////
-                uimqroo.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        // Do something in response to button click
-                        Intent univerisdad = new Intent( getActivity() , Uni_detalle.class);
-                        univerisdad.putExtra("uni","uimqroo");
-                        startActivity(univerisdad);
-                    }
-                });
-
-                /////SOLIDARIDAD///////
-                UniversidadSur_soli.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        // Do something in response to button click
-                        Intent univerisdad = new Intent( getActivity() , Uni_detalle.class);
-                        univerisdad.putExtra("uni","UniversidadSur_soli");
-                        startActivity(univerisdad);
-                    }
-                });
-                universidadriviera_soli.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        // Do something in response to button click
-                        Intent univerisdad = new Intent( getActivity() , Uni_detalle.class);
-                        univerisdad.putExtra("uni","universidadriviera_soli");
-                        startActivity(univerisdad);
-                    }
-                });
-                ut_rivieramaya_soli.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        // Do something in response to button click
-                        Intent univerisdad = new Intent( getActivity() , Uni_detalle.class);
-                        univerisdad.putExtra("uni","ut_rivieramaya_soli");
-                        startActivity(univerisdad);
-                    }
-                });
-                unid_soli.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        // Do something in response to button click
-                        Intent univerisdad = new Intent( getActivity() , Uni_detalle.class);
-                        univerisdad.putExtra("uni","unid_soli");
-                        startActivity(univerisdad);
-                    }
-                });
-
-                /////COZUMEL///////
-                inst_partenon_cozumel.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        // Do something in response to button click
-                        Intent univerisdad = new Intent( getActivity() , Uni_detalle.class);
-                        univerisdad.putExtra("uni","inst_partenon_cozumel");
-                        startActivity(univerisdad);
-                    }
-                });
-
-                /////BENITO JUÁREZ///////
-                upqroo_benito_juarez.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        // Do something in response to button click
-                        Intent univerisdad = new Intent( getActivity() , Uni_detalle.class);
-                        univerisdad.putExtra("uni","upqroo_benito_juarez");
-                        startActivity(univerisdad);
-                    }
-                });
-                ut_benito_juarez.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        // Do something in response to button click
-                        Intent univerisdad = new Intent( getActivity() , Uni_detalle.class);
-                        univerisdad.putExtra("uni","ut_benito_juarez");
-                        startActivity(univerisdad);
-                    }
-                });
-                uni_henbord_benito_juarez.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        // Do something in response to button click
-                        Intent univerisdad = new Intent( getActivity() , Uni_detalle.class);
-                        univerisdad.putExtra("uni","uni_henbord_benito_juarez");
-                        startActivity(univerisdad);
-                    }
-                });
-                uni_azteca_benito_juarez.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        // Do something in response to button click
-                        Intent univerisdad = new Intent( getActivity() , Uni_detalle.class);
-                        univerisdad.putExtra("uni","uni_azteca_benito_juarez");
-                        startActivity(univerisdad);
-                    }
-                });
-
-                centro_gestalt_benito_juarez.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        // Do something in response to button click
-                        Intent univerisdad = new Intent( getActivity() , Uni_detalle.class);
-                        univerisdad.putExtra("uni","centro_gestalt_benito_juarez");
-                        startActivity(univerisdad);
-                    }
-                });
-
-            }
-        });
+        rvLista = root.findViewById(R.id.rvLista);
+        svSearch = root.findViewById(R.id.svSearch);
+        initValues();
+        initListener();
         return root;
+    }
+
+    private void initValues() {
+        LinearLayoutManager manager = new LinearLayoutManager(getContext());
+        rvLista.setLayoutManager(manager);
+
+        items = getItems();
+        adapter = new RecyclerAdapter(items, this);
+        rvLista.setAdapter(adapter);
+    }
+
+    private void initListener() {
+        svSearch.setOnQueryTextListener(this);
+    }
+
+    private List<ItemList> getItems() {
+        List<ItemList> itemLists = new ArrayList<>();
+        itemLists.add(new ItemList("itzm chetumal", "uni_itzm", R.drawable.itzm));
+        itemLists.add(new ItemList("cudv chetumal", "uni_cudv", R.drawable.cudv_1));
+        itemLists.add(new ItemList("unid chetumal", "unid_chetumal", R.drawable.unid_chetumal));
+        itemLists.add(new ItemList("modelo chetumal", "modelo_chetumal", R.drawable.uni_modelo_chetumal));
+        itemLists.add(new ItemList("politecnica bacalar", "politec_bacalar", R.drawable.uni_poli_bacalar));
+        itemLists.add(new ItemList("centro regional de educacion bacalar", "centro_edu_bacalar", R.drawable.centro_regio_edu_bacalar));
+        itemLists.add(new ItemList("upp felipe carrillo puerto", "upp", R.drawable.upp));
+        itemLists.add(new ItemList("instituto tecnologico superior felipe carrillo puerto", "inst_tec_felipe_c", R.drawable.inst_tec_felipe_c));
+        itemLists.add(new ItemList("uimqroo jose maria morelos", "uimqroo", R.drawable.uimqroo));
+        itemLists.add(new ItemList("universidad del sur playa del carmen solidaridad", "UniversidadSur_soli", R.drawable.universidadsur_solidaridad));
+        itemLists.add(new ItemList("universidad riviera playa del carmen solidaridad", "universidadriviera_soli", R.drawable.universidadriviera_solidaridad));
+        itemLists.add(new ItemList("ut riviera maya solidaridad", "ut_rivieramaya_soli", R.drawable.ut_rivieramaya_solidaridad));
+        itemLists.add(new ItemList("unid playa del carmen solidaridad", "unid_soli", R.drawable.unid_solidaridad));
+        itemLists.add(new ItemList("instituto partenon de cozumel", "inst_partenon_cozumel", R.drawable.inst_partenon_cozumel));
+        itemLists.add(new ItemList("universidad politecnica de quintana roo cancun benito juarez", "upqroo_benito_juarez", R.drawable.upqroo_benito_juarez));
+        itemLists.add(new ItemList("universidad tecnologica cancun benito juarez", "ut_benito_juarez", R.drawable.ut_benito_juarez));
+        itemLists.add(new ItemList("universidad henbord cancun benito juarez", "uni_henbord_benito_juarez", R.drawable.uni_henbord_benito_juarez));
+        itemLists.add(new ItemList("universidad azteca cancun benito juarez", "uni_azteca_benito_juarez", R.drawable.uni_azteca_benito_juarez));
+        itemLists.add(new ItemList("gestalt cancun benito juarez", "centro_gestalt_benito_juarez", R.drawable.centro_gestalt_benito_juarez));
+
+        return itemLists;
+    }
+    @Override
+    public void itemClick(ItemList item) {
+        Intent intent = new Intent(getActivity(), Uni_detalle.class);
+        intent.putExtra("uni", item.getDescripcion());
+        startActivity(intent);
+    }
+
+    @Override
+    public boolean onQueryTextSubmit(String query) {
+        return false;
+    }
+
+    @Override
+    public boolean onQueryTextChange(String newText) {
+        adapter.filter(newText);
+        return false;
     }
 }
