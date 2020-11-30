@@ -146,7 +146,7 @@
                 android:background="@drawable/et_bg"
                 android:hint="@string/email_address"
                 android:inputType="textEmailAddress"
-                android:maxLength="20"
+                android:maxLength="50"
                 android:padding="16dp"
                 android:textColor="#FFFFFF"
                 android:textColorHint="@color/login_form_details" />
