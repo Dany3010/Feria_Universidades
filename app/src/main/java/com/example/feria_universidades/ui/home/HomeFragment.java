@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.MediaController;
 import android.widget.TextView;
 import android.widget.VideoView;
 
@@ -26,7 +25,7 @@ public class HomeFragment extends Fragment {
     private HomeViewModel homeViewModel;
     private VideoView videoView;
     private TextView inicio;
-    private Button testvoc;
+    private Button testvoc,play,pause,restart;
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         homeViewModel =
@@ -36,25 +35,14 @@ public class HomeFragment extends Fragment {
           inicio=(TextView)root.findViewById(R.id.parrafo1);
         testvoc=(Button)root.findViewById(R.id.test);
 
+        play=(Button) root.findViewById(R.id.playh);
+        pause=(Button) root.findViewById(R.id.pauseh);
+        restart=(Button) root.findViewById(R.id.restarth);
 
         videoView=(VideoView)root.findViewById(R.id.video);
         String videoPath = "https://mirutamx.000webhostapp.com/videos/secretaria.mp4";
         Uri uri = Uri.parse(videoPath);
         videoView.setVideoURI(uri);
-       /* MediaController mediaController = new MediaController(videoView.getContext());
-        mediaController.setAnchorView(videoView);
-
-
-        videoView.setMediaController(mediaController);*/
-
-videoView.start();
-
-
-
-
-
-
-
 
 
 
@@ -76,6 +64,26 @@ videoView.start();
                         // Do something in response to button click
                         Intent Bmeters = new Intent( getActivity() ,MainActivity2.class);
                         startActivity(Bmeters);
+                    }
+                });
+
+                play.setOnClickListener(new View.OnClickListener() {
+                    public void onClick(View v) {
+                        // Do something in response to button click
+                        videoView.start();
+                    }
+                });
+                pause.setOnClickListener(new View.OnClickListener() {
+                    public void onClick(View v) {
+                        // Do something in response to button click
+                        videoView.pause();
+                    }
+                });
+                restart.setOnClickListener(new View.OnClickListener() {
+                    public void onClick(View v) {
+                        // Do something in response to button click
+                        videoView.seekTo(-10000);
+                        videoView.pause();
                     }
                 });
 

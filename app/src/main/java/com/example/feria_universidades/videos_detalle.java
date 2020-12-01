@@ -1,7 +1,5 @@
 package com.example.feria_universidades;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.os.Bundle;
 import android.webkit.WebSettings;
@@ -9,6 +7,8 @@ import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.VideoView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class videos_detalle extends AppCompatActivity {
     Context context;
@@ -223,89 +223,15 @@ public class videos_detalle extends AppCompatActivity {
 
         }
         ///////BACALAR/////////
-        if (valor.equals("politec_bacalar_videos")){
+        if (valor.equals("edu_bacalar_videos")){
             recibidor_v.setText("Universidad Politécnica de Bacalar");
             imagen_uni_v.setImageResource(R.drawable.uni_poli_bacalar);
-            recibidor_v2.setText("VIDEOS");
-            recibidor_v3.setText("OFERTA EDUCATIVA");
-            recibidor_v4.setText("BIENVENIDA");
-            //////////////////////////////////////////
-
-            String frameVideo1 = "<html><body><br><iframe width=\"370\" height=\"260\"  src=\"https://drive.google.com/file/d/1Kkq6l0veQwzbhPNTXl5F0qEkeDL2AvMo/preview\" frameborder=\"0\" allowfullscreen></iframe></body></html>";
-            String frameVideo2 = "<html><body><br><iframe width=\"370\" height=\"260\"  src=\"https://drive.google.com/file/d/1UzU09oQs0kuNxvzeGuI1N7KzA7qCrcxT/preview\" frameborder=\"0\" allowfullscreen></iframe></body></html>";
-            String frameVideo3 = "<html><body><br><iframe width=\"370\" height=\"260\"  src=\"https://drive.google.com/file/d/1oJQyW8h6tiDF3y6aWjqEJwrJ2B4o5Axo/preview\" frameborder=\"0\" allowfullscreen></iframe></body></html>";
-            String frameVideo4 = "<html><body><br><iframe width=\"370\" height=\"260\"  src=\"https://drive.google.com/file/d/1uBscuAEdDIzDfNwDDdeaS5Jg5TX3Zzmg/preview\" frameborder=\"0\" allowfullscreen></iframe></body></html>";
-            String frameVideo5 = "<html><body><br><iframe width=\"370\" height=\"260\"  src=\"https://drive.google.com/file/d/1bA_VSnZ5LaJlunTdTDewlgtD2sEDoPt7/preview\" frameborder=\"0\" allowfullscreen></iframe></body></html>";
-            String frameVideo6 = "<html><body><br><iframe width=\"370\" height=\"260\"  src=\"https://drive.google.com/file/d/1U627PcM9RsOpBdxXNWo8h6Nh6D_N8H0Z/preview\" frameborder=\"0\" allowfullscreen></iframe></body></html>";
-            String frameVideo7 = "<html><body><br><iframe width=\"370\" height=\"260\"  src=\"https://drive.google.com/file/d/15sRmExTLVfBxlAP0VkydDOiAFHh31I9Q/preview\" frameborder=\"0\" allowfullscreen></iframe></body></html>";
-
-
-            WebView myWebView1 = (WebView) findViewById(R.id.video_uni1);
-            WebView myWebView2 = (WebView) findViewById(R.id.video_uni2);
-            WebView myWebView3 = (WebView) findViewById(R.id.video_uni3);
-            WebView myWebView4 = (WebView) findViewById(R.id.video_uni4);
-            WebView myWebView5 = (WebView) findViewById(R.id.video_uni5);
-            WebView myWebView6 = (WebView) findViewById(R.id.video_uni6);
-            WebView myWebView7 = (WebView) findViewById(R.id.video_uni7);
-
-            WebSettings webSettings1= myWebView1.getSettings();
-            WebSettings webSettings2= myWebView2.getSettings();
-            WebSettings webSettings3= myWebView3.getSettings();
-            WebSettings webSettings4= myWebView4.getSettings();
-            WebSettings webSettings5= myWebView5.getSettings();
-            WebSettings webSettings6= myWebView6.getSettings();
-            WebSettings webSettings7= myWebView7.getSettings();
-
-            webSettings1.setJavaScriptEnabled(true);
-            webSettings2.setJavaScriptEnabled(true);
-            webSettings3.setJavaScriptEnabled(true);
-            webSettings4.setJavaScriptEnabled(true);
-            webSettings5.setJavaScriptEnabled(true);
-            webSettings6.setJavaScriptEnabled(true);
-            webSettings7.setJavaScriptEnabled(true);
-
-            myWebView1.loadData(frameVideo1, "text/html", "utf-8");
-            myWebView2.loadData(frameVideo2, "text/html", "utf-8");
-            myWebView3.loadData(frameVideo3, "text/html", "utf-8");
-            myWebView4.loadData(frameVideo4, "text/html", "utf-8");
-            myWebView5.loadData(frameVideo5, "text/html", "utf-8");
-            myWebView6.loadData(frameVideo6, "text/html", "utf-8");
-            myWebView7.loadData(frameVideo7, "text/html", "utf-8");
+            recibidor_v2.setText(" NO HAY VIDEOS POR EL MOMENTO");
             //////////////////////////////////////////
 
         }
-        if (valor.equals("centro_edu_bacalar")){
-            recibidor_v.setText("Centro Regional de Educación Normal Lic. Javier Rojo Gómez");
-            imagen_uni_v.setImageResource(R.drawable.centro_regio_edu_bacalar);
-            recibidor_v2.setText("VIDEOS");
-            recibidor_v3.setText("");
-            recibidor_v4.setText("");
-            //////////////////////////////////////////
 
-            String frameVideo1 = "<html><body><br><iframe width=\"370\" height=\"260\"  src=\"https://drive.google.com/file/d/1oXDUo0966-f-uCnqTtj4tzXfLdiOjyQk/preview\" frameborder=\"0\" allowfullscreen></iframe></body></html>";
-            String frameVideo2 = "<html><body><br><iframe width=\"370\" height=\"260\"  src=\"https://drive.google.com/file/d/1ByUFXefiWxYjwfCosJz31te_G-OnEoom/preview\" frameborder=\"0\" allowfullscreen></iframe></body></html>";
-            String frameVideo3 = "<html><body><br><iframe width=\"370\" height=\"260\"  src=\"https://drive.google.com/file/d/1_PYoVtBWs4hC7NB9tqF3zRk-OtRsaf4b/preview\" frameborder=\"0\" allowfullscreen></iframe></body></html>";
-
-            WebView myWebView1 = (WebView) findViewById(R.id.video_uni1);
-            WebView myWebView2 = (WebView) findViewById(R.id.video_uni2);
-            WebView myWebView3 = (WebView) findViewById(R.id.video_uni3);
-
-
-            WebSettings webSettings1= myWebView1.getSettings();
-            WebSettings webSettings2= myWebView2.getSettings();
-            WebSettings webSettings3= myWebView3.getSettings();
-
-            webSettings1.setJavaScriptEnabled(true);
-            webSettings2.setJavaScriptEnabled(true);
-            webSettings3.setJavaScriptEnabled(true);
-
-            myWebView1.loadData(frameVideo1, "text/html", "utf-8");
-            myWebView2.loadData(frameVideo2, "text/html", "utf-8");
-            myWebView2.loadData(frameVideo3, "text/html", "utf-8");
-
-            //////////////////////////////////////////
-
-        }
+        /////////////////
         if (valor.equals("upp_videos")){
             recibidor_v.setText("Universidad Privada de la Península");
             imagen_uni_v.setImageResource(R.drawable.centro_regio_edu_bacalar);
@@ -555,7 +481,7 @@ public class videos_detalle extends AppCompatActivity {
         }
         /////BENITO JUÁREZ///////
         if (valor.equals("upqroo_benito_juarez_videos")){
-            recibidor_v.setText("Instituto Partenón de Cozumel");
+            recibidor_v.setText("Universidad Politécnica de Quintana Roo");
             imagen_uni_v.setImageResource(R.drawable.upqroo_benito_juarez);
             recibidor_v2.setText("VIDEOS");
             recibidor_v3.setText("");

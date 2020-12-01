@@ -26,9 +26,9 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="20dp"
                 app:cardCornerRadius="30dp"
-                app:cardElevation="40dp"
-                 android:layout_margin="20dp">
+                app:cardElevation="40dp">
 
                 <LinearLayout
                     android:layout_width="381dp"
@@ -37,8 +37,49 @@
 
                     <VideoView
                         android:id="@+id/video"
-                        android:layout_width="367dp"
-                        android:layout_height="245dp" />
+                        android:layout_width="370dp"
+                        android:layout_height="303dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="339dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/playh"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/play" />
+
+                    <Button
+                        android:id="@+id/pauseh"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/pausar" />
+
+                    <Button
+                        android:id="@+id/restarth"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/reiniciar" />
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 

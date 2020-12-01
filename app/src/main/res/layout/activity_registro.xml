@@ -176,7 +176,7 @@
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="40dp"
                 android:background="@drawable/btn_bg"
-                android:text="Registrarse"
+                android:text="REGISTRARSE"
                 android:textAllCaps="false"
                 android:textColor="#E8FFFFFF" />
         </LinearLayout>

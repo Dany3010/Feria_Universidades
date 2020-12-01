@@ -36,7 +36,7 @@ public class contactos_uni_detalle extends AppCompatActivity {
         if (valor.equals("uni_itzm_contac")){
             recibidor.setText("Instituto Tecnológico de la Zona Maya");
             imagen_uni.setImageResource(R.drawable.itzm);
-            recibidor2.setText("Carretera Chetumal – Escárcega Km. 21.5 Ejido Juan Sarabia, Quintana Roo, C.P. 77965");
+            recibidor2.setText("Carretera Chetumal – Escárcega Km. 21.5 \n Ejido Juan Sarabia, Quintana Roo, C.P. 77965");
             face.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
                     // Do something in response to button click
@@ -152,7 +152,7 @@ public class contactos_uni_detalle extends AppCompatActivity {
         if (valor.equals("unid_chetumal_contac")){
             recibidor.setText("Universidad Interamericana para el  Desarrollo Campus Chetumal");
             imagen_uni.setImageResource(R.drawable.unid_chetumal);
-            recibidor2.setText("Av. Juárez 168, Centro, 77000 Chetumal, Q.R.");
+            recibidor2.setText("\n\nAv. Juárez 168, Centro, \n77000 Chetumal, Q.R.");
 
             WebView webView = (WebView) findViewById(R.id.mapas_unis);
             webView.getSettings().setJavaScriptEnabled(true);
@@ -418,7 +418,7 @@ public class contactos_uni_detalle extends AppCompatActivity {
         if (valor.equals("inst_tec_felipe_contac")){
             recibidor.setText("Instituto Tecnológico Superior de Felipe Carrillo Puerto");
             imagen_uni.setImageResource(R.drawable.inst_tec_felipe_c);
-            recibidor2.setText("Av. Vigía Chico 77200 Felipe Carrillo Puerto, Quintana Roo");
+            recibidor2.setText("\nAv. Vigía Chico 77200 Felipe Carrillo Puerto, Quintana Roo");
 
             WebView webView = (WebView) findViewById(R.id.mapas_unis);
             webView.getSettings().setJavaScriptEnabled(true);
@@ -585,9 +585,9 @@ public class contactos_uni_detalle extends AppCompatActivity {
             });
         }
         if (valor.equals("uniriviera_soli_contac")){
-            recibidor.setText("Universidad del Sur Campus Playa del Carmen");
-            imagen_uni.setImageResource(R.drawable.universidadsur_solidaridad);
-            recibidor2.setText("Av. 58 Norte MZ 168 Lote 4 Real Ibiza, 77723 Playa del  Carmen, QRO");
+            recibidor.setText("Universidad Riviera");
+            imagen_uni.setImageResource(R.drawable.universidadriviera_solidaridad);
+            recibidor2.setText("\n Av. 58 Norte MZ 168 Lote 4 Real Ibiza, 77723 Playa del  Carmen, QRO");
 
             WebView webView = (WebView) findViewById(R.id.mapas_unis);
             webView.getSettings().setJavaScriptEnabled(true);

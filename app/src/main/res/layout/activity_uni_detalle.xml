@@ -4,33 +4,76 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo2"
     tools:context=".Uni_detalle">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        tools:layout_editor_absoluteX="-101dp"
+        tools:layout_editor_absoluteY="176dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/titulo_uni"
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="84dp"
-                android:layout_marginTop="10dp"
-                android:textAlignment="center"
-                android:textColor="#000000"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/titulo_uni"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/esp_blanco32"
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
                 android:textSize="24sp" />
 
-            <ImageView
-                android:id="@+id/imagenUni"
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="174dp"
-                tools:srcCompat="@tools:sample/avatars" />
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="40dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imagenUni"
+                        android:layout_width="match_parent"
+                        android:layout_height="174dp"
+                        tools:srcCompat="@tools:sample/avatars" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/esp_blanco36"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:textSize="24sp" />
 
             <LinearLayout
                 android:layout_width="244dp"
@@ -106,20 +149,6 @@
                     android:layout_height="63dp"
                     android:background="@drawable/contactos" />
             </LinearLayout>
-
-            <TextView
-                android:id="@+id/esp_blanco6"
-                android:layout_width="match_parent"
-                android:layout_height="41dp"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/descrip_uni"
-                android:layout_width="match_parent"
-                android:layout_height="201dp"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="19sp" />
 
         </LinearLayout>
     </ScrollView>
